@@ -1,234 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr" dir="=" ltr">
-    "<head>
-        <link rel="stylesheet" type="text/css" href="Book_Style.css" />
-
-        <title>C'est mon book !</title>
-
-
-
-
-
-
-
-    </head>
-
-
-
-
-    <body style="background-color:#282828;">
-
-
-
-      <script>
-
-      .boutton_header {
-        border: none;
-        color: white;
-        padding: 10px 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 2px 2px;
-        cursor: pointer;
-        background-color: #181818;
-        transition:all 0.5s;
-      }
-
-
-      .boutton_header:hover {
-        color: #1fccde;
-        transition:all 0.5s;
-      }
-
-
-
-
-      .border {
-        background-color: #181818;
-        color: #181818;
-      }
-
-      .no_select {
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-      }
-        .no_select::selection {
-        background: transparent;
-      }
-
-
-      #a_cacher {
-        width: 100%;
-        padding: 50px 0;
-        text-align: center;
-        background-color: #484848;
-        margin-top: 20px;
-        box-shadow:0px 0px 10px rgba(150, 150, 150, 1);
-
-      }
-
-      #a_cacher_proj {
-        width: 100%;
-        padding: 50px 0;
-        text-align: center;
-        background-color: #484848;
-        margin-top: 20px;
-
-      }
-
-
-      #dessins {
-        width: 400px;
-        height: auto;
-
-      }
-
-      #bandeau {
-        width: 1200px;
-        height: auto;
-
-      }
-
-      .zoom {
-        padding: 50px;
-        transition: transform .2s; /* Animation */
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-        filter: blur(0px);
-        -webkit-filter: blur(0px);
-      }
-
-      .zoom:hover {
-        transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-
-
-      }
-
-
-      </script>
-
-
-      <img src="https://www.chromethemer.com/wallpapers/4k-wallpapers/images/smooth-waves-4k-wallpaper.jpg"alt="yey!" height="900" width="1756" style="top: 0px; left: 0px;position:absolute"/>
-
-
-      <div id="a_cacher" style="position:absolute; top:850px; left:0px; color:white;">
-      <p><font size="5"> Qui suis-je ?</font></p>
-      <p><font size="4"> Je suis Ilan Outhier <br /></font></p>
-      Ici =  description rapide <br />
-      
-
-    </div>
-
-
-    <div id="a_cacher_proj" style="position:absolute; top:1500px; left:0px; color:white;">
-    <p>
-      <font size="5">
-        Mes projets
-      </font>
-    </p>
-
-
-    <p>
-      <font size="4">
-        Dessins
-      </font>
-    </p>
-
-<!--
-    <a href="https://i.postimg.cc/T35LXSx8/Mon-premier-dessin-tablette.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/T35LXSx8/Mon-premier-dessin-tablette.jpg"style="top: 300px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/YjchVsYt/papa-noel.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/YjchVsYt/papa-noel.jpg"style="top: 300px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/9XDb6wZk/tommy.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/9XDb6wZk/tommy.jpg"style="top: 300px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/zGVn49s1/Controle-le-feu.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/zGVn49s1/Controle-le-feu.jpg"style="top: 900px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/0NC2nNV5/evolution-croquis-Mathieu.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/5N1nyB0k/le-croquis-de-Mathieu.jpg"style="top: 900px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/zG2Cm4Rr/evolution-la-tour.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/dtxkpFzm/La-tour.jpg"style="top: 900px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/Nfy6nhqv/sasuke.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/Nfy6nhqv/sasuke.jpg"style="top: 1200px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://media1.tenor.com/images/44a68c05235e9160cc9ebd7fc699218d/tenor.gif?itemid=17318847"> <img id="dessins" class="zoom" src="https://media1.tenor.com/images/44a68c05235e9160cc9ebd7fc699218d/tenor.gif?itemid=17318847"style="top: 1200px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/PrcLvNRB/izuku.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/PrcLvNRB/izuku.jpg"style="top: 1200px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.ibb.co/pyt2G3B/One-Man-Law-banniere-ytb.jpg"> <img id="bandeau" class="zoom" src="https://i.ibb.co/pyt2G3B/One-Man-Law-banniere-ytb.jpg"style="top: 1500px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/yYtxnPZL/Mirio-Togata.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/yYtxnPZL/Mirio-Togata.jpg"style="top: 1800px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/y8Mvj1kG/Naruto.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/y8Mvj1kG/Naruto.jpg"style="top: 1800px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/yxjmzB67/brain-use-it.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/yxjmzB67/brain-use-it.jpg"style="top: 1800px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/fb43WKWV/organisation-fon-d-ecran.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/fb43WKWV/organisation-fon-d-ecran.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/NfM2dFPj/mage.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/NfM2dFPj/mage.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/ydkhC2gR/yey-glitch.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/ydkhC2gR/yey-glitch.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/LXL365Mp/logo-Lily.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/LXL365Mp/logo-Lily.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/0yBCQ8YQ/cube-3d.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/0yBCQ8YQ/cube-3d.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/J0zq0t2s/oculus-rift.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/J0zq0t2s/oculus-rift.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/3JW4w2nX/assassin-s-creed.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/3JW4w2nX/assassin-s-creed.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/wvfxKGKS/la-octane-evee-mode.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/wvfxKGKS/la-octane-evee-mode.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/bJNYBj5x/la-octanr-2.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/bJNYBj5x/la-octanr-2.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/fRRcrMyC/futuristique.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/fRRcrMyC/futuristique.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/37xcjd4m/Wallpaper-yey.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/37xcjd4m/Wallpaper-yey.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/pLTZR9n4/banniere-yey-ytb.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/pLTZR9n4/banniere-yey-ytb.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/9Mn4PMfR/sabre.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/9Mn4PMfR/sabre.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/dVyh2wMD/iron-man-holo.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/dVyh2wMD/iron-man-holo.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-    <a href="https://i.postimg.cc/59K5p4rm/Matt.jpg"> <img id="dessins" class="zoom" src="https://i.postimg.cc/59K5p4rm/Matt.jpg"style="top: 2100px; left: 0px;position:absolute color:white"/></a>
-
-//-->
-    <p>
-      <font size="4">
-        Code
-      </font>
-    </p>
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
+<html lang="fr">
+  <title>Ilan Outhier</title>
+  <meta charset="UTF-8">
+  <head>
+      <link rel="stylesheet" type="text/css" href="Book_Style.css" />
+  </head>
+
+
+  <body>
 
     <script>
 
-        var x = document.getElementById("a_cacher");
+      var yey = new Boolean("false");
+
+      function play(x) {
+        x.classList.toggle("change");
 
 
-        x.style.display = "none";
+        if (yey)
+        {
+          const the_div = document.querySelector(".sidebar");
+          the_div.classList.add('move-right');
+          the_div.classList.remove('move-left');
+          yey = !yey
+        }
+        else
+        {
+          const the_div = document.querySelector(".sidebar");
+          the_div.classList.add('move-left');
+          the_div.classList.remove('move-right');
+          yey = !yey
+        }
+      }
 
-        var y = document.getElementById("a_cacher_proj");
 
 
-        y.style.display = "none";
+
+
+      function showhide(){
+        var fond = document.getElementById("fondecranwola");
+        var x = document.getElementById("about me");
+        var ajouter = document.getElementById("ajapropos2");
+        if (x.style.display === "none"){
+          fond.style.height = "200%";
+          x.style.display = "block";
+          ajouter.classList.add("apropos2");
+
+
+        }else{
+          //fond.style.height = "100%"
+          //x.style.display = "none"
+        }
+      }
+
+
+
+
+
+
+
 
 
 
@@ -238,167 +68,99 @@
 
 
 
-		<div style="position:relative;" class='no_select'>
-			<font face="Helvetica" size="6" color="#ffffff">
+    <div class="bgimg" id="fondecranwola">
+
+      <form class="presentation" >
+        <p style="color:white; text-align:center;">Bonjour, je suis <b>Ilan Outhier.</b></p>
+
+        <p style="color:white; text-align:center;">Je dessine, j'anime, je créé des objets 3D, je code...</p>
 
 
-				<p id="en_haut"style="position:absolute; top:0px; left:100px; color:black;">
-
-					Salut, <br />
-					Je suis Ilan Outhier, <br />
-					Je suis designer. <br />
-
-				</p>
+      </form>
 
 
-			</font>
 
-        <p style="position:fixed; top:0px; left:0px;" class="border">
-
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
-			____-.<br />
+      <div class="container" onclick="play(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
 
 
-        </p>
+      <div class="sidebar">
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a href="#top">Home</a>
+        <a></a>
+        <a></a>
+        <a href="#about me" onclick="showhide()"> À propos de moi</a>
+        <a></a>
+        <a></a>
+        <a href="#creations"> Mes créations</a>
+        <a></a>
+        <a></a>
+        <a href="#fin"> Fin</a>
+        <a></a>
+        <a></a>
+      </div>
+
+
+      <div class="text">
+        <hr style="margin:auto; width:100; color: #f20055;">
+        <h1 name="home" style="color:white" id="home">ILAN OUTHIER</h1>
+        <hr style="margin:auto; width:20%; color: #f20055;"> <!-- Ligne -->
+
 
       </div>
 
 
+      <a href="#about me" class="lien" onclick="showhide()">
+      <form class="apropos" >
 
+        <h3>
+          <b>V</b>
+        </h3>
 
-			<button onclick="home()"type="button" style="position:fixed; top:60px; left:3px; height:5px; width:5px" class="boutton_header">
-				<font size="5">
-					☖
-				</font>
-			</button>
+      </form>
+      </a>
 
+      <div class="about" id="about me" style="display:none">
 
 
+        <form class="aproposdemoi" >
+          <h4 style="color:white; text-align:center;">Bonjour et bienvenue dans mon portfolio. Je suis <b>Ilan Outhier</b>, lycéen au lycée Louis Lachenal.</h4>
+        </form>
+        <form class="aproposdemoi" >
+          <p style="color:white; text-align:center;"><b>J'ai fais plusieurs créations de différents types :</b></p>
 
+          <p style="color:white; text-align:center;"> -Du dessin</p>
+          <p style="color:white; text-align:center;"> -De l'animation 2D</p>
+          <p style="color:white; text-align:center;"> -De la modélisation 3D (création d'objets ou de personnages pour des jeux vidéos)</p>
+          <p style="color:white; text-align:center;"> -Du code (html/CSS/JS/python/C#)</p>
+          <p style="color:white; text-align:center;">Et je vais vous présenter tout ça dans ce portfolio.</p>
 
+        </form>
 
 
-			<button onclick="Montrer_proj()" type="button" style="position:fixed; top:155px; left:0px; height:5px; width:5px" class="boutton_header">
-				<font size="5">
-					✎
-				</font>
-			</button>
 
 
 
+        <a href="#creations" class="lien2" onclick="showhide2()">
+        <form id="ajapropos2">
 
+          <h3>
+            <b>V</b>
+          </h3>
 
-			<button onclick="Montrer()" type="button" style="position:fixed; top:110px; left:5px; height:5px; width:5px" class="boutton_header">
-				<font size="5">
-					?
-				</font>
-			</button>
+        </form>
+        </a>
 
 
+      </div>
 
-
-
-
-
-
-
-
-      <script>
-
-
-      function home() {
-
-
-
-
-        var v = document.getElementById("en_haut");
-
-        if (v.style.display === "none") {
-        v.style.display = "block";
-        }
-
-        document.querySelector('#en_haut').scrollIntoView({
-        behavior: 'smooth'
-        });
-
-
-
-
-
-
-
-
-
-      }
-
-
-
-        function Montrer() {
-
-
-
-
-    			var x = document.getElementById("a_cacher");
-
-    			if (x.style.display === "none") {
-    			x.style.display = "block";
-    			}
-
-          document.querySelector('#a_cacher').scrollIntoView({
-          behavior: 'smooth'
-          });
-
-        }
-
-
-
-        function Montrer_proj() {
-
-          var x = document.getElementById("a_cacher");
-
-    			if (x.style.display === "none") {
-    			x.style.display = "block";
-    			}
-
-
-
-
-    			var y = document.getElementById("a_cacher_proj");
-
-    			if (y.style.display === "none") {
-    			y.style.display = "block";
-    			}
-
-          document.querySelector('#a_cacher_proj').scrollIntoView({
-          behavior: 'smooth'
-          });
-
-        }
-      </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </body>
+    </div>
+  </body>
 </html>
