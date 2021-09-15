@@ -41,16 +41,29 @@
       function showhide(){
         var fond = document.getElementById("fondecranwola");
         var x = document.getElementById("about me");
-        var ajouter = document.getElementById("ajapropos2");
+
+        var ajouter = document.getElementById("apropos2");
+
+
         if (x.style.display === "none"){
           fond.style.height = "200%";
           x.style.display = "block";
           ajouter.classList.add("apropos2");
 
 
-        }else{
-          //fond.style.height = "100%"
-          //x.style.display = "none"
+        }
+      }
+
+      function showhide2(){
+        var fond = document.getElementById("fondecranwola");
+        var y = document.getElementById("creations")
+
+        if (y.style.display === "none"){
+          fond.style.height = "300%";
+          y.style.display = "block";
+          ajouter.classList.add("apropos2");
+
+
         }
       }
 
@@ -71,11 +84,13 @@
 
     <div class="bgimg" id="fondecranwola">
 
-      <form class="presentation" >
+      <form class="presentation">
         <p style="color:white; text-align:center; vertical-align: middle;">
           Bonjour, je suis <b>Ilan Outhier.</b><br>
           Je dessine, j'anime, je créé des objets 3D, je code...
         </p>
+
+
 
 
       </form>
@@ -101,7 +116,7 @@
         <a href="#about me" onclick="showhide()"> À propos de moi</a>
         <a></a>
         <a></a>
-        <a href="#creations"> Mes créations</a>
+        <a href="#creations" onclick="showhide()"> Mes créations</a>
         <a></a>
         <a></a>
         <a href="#fin"> Fin</a>
@@ -112,7 +127,7 @@
 
       <div class="text">
         <hr style="margin:auto; width:100; color: #f20055;">
-        <h1 name="home" style="color:white" id="home">ILAN OUTHIER</h1>
+        <h1 name="home" style="color:white" id="home">Ilan OUTHIER</h1>
         <hr style="margin:auto; width:20%; color: #f20055;"> <!-- Ligne -->
 
 
@@ -151,7 +166,7 @@
 
 
         <a href="#creations" class="lien2" onclick="showhide2()">
-        <form id="ajapropos2">
+        <form id="apropos2">
 
           <h3>
             <b>V</b>
@@ -159,6 +174,54 @@
 
         </form>
         </a>
+
+
+        <div class="crea" id="creations" style="display:none">
+
+
+
+          <form class="MesCreations" >
+            <p style="color:white; text-align:center; "><b>Voici mes créations:</b></p>
+
+
+          </form>
+
+
+          <div class="ligne">
+
+           <!-- 3D -->
+
+
+
+            <form class="colone1"  style="vertical-align: top;">
+              <p style="color:white; text-align:center; "><b>3D</b></p>
+            </form>
+
+            
+
+            <!-- Dessins -->
+
+
+
+            <form class="colone1"  style="vertical-align: top;">
+              <p style="color:white; text-align:center; "><b>Dessins</b></p>
+            </form>
+
+
+
+            <!-- Code -->
+
+
+
+            <form class="colone1"  style="vertical-align: top;">
+              <p style="color:white; text-align:center; "><b>Code</b></p>
+            </form>
+
+
+
+
+
+          </div>
 
 
       </div>
