@@ -207,15 +207,17 @@ html {
   margin: 0px;
   padding: 1px;
   width: 99%;
+  color: #fff;
 
-  background: rgba(10, 13, 22, 0.8);
+  border: 2px solid #f20055;
+  background: rgba(242, 0, 85, 0.1);
   height: auto;
   text-align: center;
 
 
 }
 .apropos:hover {
-  background: rgba(10, 13, 22, 0.5);
+  background: rgba(242, 0, 85, 0.5);
   border: 2px solid #f20055;
 
   cursor: pointer;
@@ -234,15 +236,17 @@ html {
   margin: 0px;
   padding: 1px;
   width: 99%;
+  color: #fff;
 
-  background: rgba(10, 13, 22, 0.8);
+  border: 2px solid #f20055;
+  background: rgba(242, 0, 85, 0.1);
   height: auto;
   text-align: center;
 
 
 }
 .apropos2:hover {
-  background: rgba(10, 13, 22, 0.5);
+  background: rgba(242, 0, 85, 0.5);
   border: 2px solid #f20055;
 
   cursor: pointer;
@@ -312,13 +316,10 @@ html {
   width: 33%;
   height: 600px;
 
-  /*padding: 100px;*/
   vertical-align: top;
 
 
   position: relative;
-  /*max-width: 800px;*/
-  /*margin: auto;*/
   background: rgba(10, 13, 22, 0.8);
 
 }
