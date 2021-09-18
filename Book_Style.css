@@ -216,7 +216,8 @@ html {
   position: absolute;
   right: 2;
   left: 2;
-  top: 839px;
+  /*top: 839px;*/
+	bottom: 0px;
   margin: 0px;
   padding: 1px;
   width: 99%;
@@ -246,7 +247,7 @@ html {
   position: absolute;
   right: 2;
   left: 2;
-  top: 1750px;
+  top: 1890px;
   margin: 0px;
   padding: 1px;
   width: 99%;
@@ -313,16 +314,64 @@ html {
   height: auto;
   width: auto;
 }
-.MesCreations:hover {
-  background: rgba(10, 13, 22, 0.5);
-  border: 2px solid #f20055;
+
+
+/* Graphique rond ____________________________________________________________________________________________*/
+
+
+
+
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circle-svg {
+  display: block;
+  margin: 10px auto;
+  max-height: 100px;
+}
+.circle-svg text {
+  text-align:center;
+  color:white;
+  font-size:10px
+}
+.circle-svg path.percent {
+  stroke: #f20055;
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.around {
+    stroke: #7a0f2b;
+    fill: none;
+    stroke-width: 1;
 }
 
 
 
 
 
-/* COLONE 3D DESSIN CODE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COLONE 3D DESSIN CODE _______________________________________________________________________________________*/
 
 .colone1 {
 	font-family: axis;
@@ -330,6 +379,8 @@ html {
   display: table;
   width: 33%;
   height: auto;
+
+	transition: 0.3s;
 
   vertical-align: top;
 
@@ -344,6 +395,9 @@ html {
   border: 2px solid #f20055;
 
 	cursor: pointer;
+
+	transform: translate(0, -10px);
+
 }
 
 
@@ -398,13 +452,13 @@ html {
 .presentation-3D {
   position: absolute;
 
-	top: 90px;
+	top: 10px;
 	left: 5%;
 	right: 5%;
 
 	/*padding-left: 500px;
 	padding-right: 500px;*/
-	padding-top: 50px;
+	padding-top: 10px;
 	padding-bottom: 50px;
 
 
@@ -444,7 +498,7 @@ html {
 .container2 {
 	top: 30%;
 	width: 80%;
-  position: relative;
+  position: absolute;
 	margin: 10%;
 
 }
