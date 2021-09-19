@@ -33,10 +33,11 @@ html {
 
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
   /*background: linear-gradient(rgba(19,24,42, 0.9), rgba(10, 13, 22, 0.8));*/
-  min-height: 150%;
-  height: 150%;
+  min-height: 100%;
+  height: 100%;
+	padding-top: 0;
   /*background-position: center center;*/
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-attachment: inherit;
   background-size: contain;
   /*scroll-behavior: smooth;*/
@@ -398,7 +399,23 @@ html {
   /*background: linear-gradient(rgba(19,24,42, 0.9), rgba(10, 13, 22, 0.8));*/
   min-height: 150%;
   height: 150%;
-  /*background-position: center center;*/
+	/*background-position: center center;*/
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+	background-size: contain;
+  /*scroll-behavior: smooth;*/
+
+}
+
+.FondSimpleDessin {
+
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
+
+  /*background: linear-gradient(rgba(19,24,42, 0.9), rgba(10, 13, 22, 0.8));*/
+  min-height: 150%;
+  height: 150%;
+	position: absolute;
+	/*background-position: center center;*/
   background-repeat: no-repeat;
   background-attachment: inherit;
 	background-size: contain;
@@ -658,6 +675,7 @@ html {
 .img-comp-img img {
   display:block;
   vertical-align:middle;
+	width: 425px;
 }
 
 .img-comp-slider {
@@ -673,10 +691,12 @@ html {
 }
 
 .Compareur {
-	padding-top: 15%;
+	/*padding-top: 15%;
 	padding-left: 35%;
 	padding-right: 35%;
-	position: static;
+	position: static;*/
+
+	margin-bottom: 60px;
 }
 
 
@@ -707,6 +727,7 @@ html {
 .column_2 {
   float: left;
   width: 25%;
+	padding-bottom: 150px;
 }
 
 /* Clear floats after rows */
