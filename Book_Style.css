@@ -196,12 +196,21 @@ html {
   margin: auto;
 
   background: rgba(10, 13, 22, 0.8);
+	border: 2px solid #f20055;
   height: auto;
   width: auto;
+
+	transition: box-shadow .3s;
+
+
+
 }
 .aproposdemoi:hover {
-  background: rgba(10, 13, 22, 0.5);
-  border: 2px solid #f20055;
+  /*background: rgba(10, 13, 22, 0.5);
+  background: rgba(242, 0, 85, 0.5);*/
+
+	box-shadow: 0 0 11px rgba(242, 0, 85, 0.5);
+
 }
 
 
@@ -331,6 +340,7 @@ html {
   display: block;
   margin: 10px auto;
   max-height: 100px;
+	color: white;
 }
 .circle-svg text {
   text-align:center;
@@ -352,7 +362,24 @@ html {
 
 
 
+.CodeBox {
+  position: relative;
 
+
+
+  max-width: 800px;
+  padding: 16px;
+
+  margin: auto;
+
+  background: rgba(10, 13, 22, 0.5);
+  height: auto;
+  width: auto;
+}
+.CodeBox:hover {
+  background: rgba(10, 13, 22, 0.8);
+  border: 2px solid #f20055;
+}
 
 
 
@@ -458,12 +485,10 @@ html {
 
 	/*padding-left: 500px;
 	padding-right: 500px;*/
-	padding-top: 10px;
-	padding-bottom: 50px;
+	padding: 30px;
 
 
-  margin: 20px;
-
+	border: 2px solid #f20055;
   /*max-width: 300px;*/
 
   background: rgba(10, 13, 22, 0.8);
@@ -474,16 +499,10 @@ html {
 
 }
 .presentation-3D:hover {
-  background: rgba(10, 13, 22, 0.5);
-  border: 2px solid #f20055;
-
+  /*background: rgba(10, 13, 22, 0.5);
+  border: 2px solid #f20055;*/
+	box-shadow: 0 0 11px rgba(242, 0, 85, 0.5);
 }
-
-
-
-
-
-
 
 
 
@@ -496,7 +515,7 @@ html {
 
 /* Position the image container (needed to position the left and right arrows) */
 .container2 {
-	top: 30%;
+	top: 10%;
 	width: 80%;
   position: absolute;
 	margin: 10%;
