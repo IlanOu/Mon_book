@@ -708,6 +708,20 @@ html {
 
 
 
+.previous {
+  color: white;
+	text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+	margin: 10px;
+	font-size: 20px;
+
+	border: 2px solid #f20055;
+  background: rgba(10, 13, 22, 0.8);
+	text-align: center;
+}
+
+
 
 
 
@@ -726,7 +740,7 @@ html {
 /* Create four equal columns that floats next to each other */
 .column_2 {
   float: left;
-  width: 25%;
+  width: 24.89%;
 	padding-bottom: 150px;
 }
 
