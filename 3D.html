@@ -1,153 +1,291 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <title>Ilan Outhier - 3D </title>
+  <title>Ilan Outhier - Dessins </title>
   <meta charset="UTF-8">
   <head>
       <meta content='width=device-width, initial-scale=1' name='viewport'/>
       <link rel="stylesheet" type="text/css" href="Book_Style.css" />
       <link rel="icon" href="imgs/irregular_quadrilateral_48px.png" type="image/png">
+
+
+
+
+
+
+
+
+
+      <script>
+        function initComparisons() {
+          var x, i;
+          /*find all elements with an "overlay" class:*/
+          x = document.getElementsByClassName("img-comp-overlay");
+          for (i = 0; i < x.length; i++) {
+            /*once for each "overlay" element:
+            pass the "overlay" element as a parameter when executing the compareImages function:*/
+            compareImages(x[i]);
+          }
+          function compareImages(img) {
+            var slider, img, clicked = 0, w, h;
+            /*get the width and height of the img element*/
+            w = img.offsetWidth;
+            h = img.offsetHeight;
+            /*set the width of the img element to 50%:*/
+            img.style.width = (w / 2) + "px";
+            /*create slider:*/
+            slider = document.createElement("DIV");
+            slider.setAttribute("class", "img-comp-slider");
+            /*insert slider*/
+            img.parentElement.insertBefore(slider, img);
+            /*position the slider in the middle:*/
+            slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+            slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+            /*execute a function when the mouse button is pressed:*/
+            slider.addEventListener("mousedown", slideReady);
+            /*and another function when the mouse button is released:*/
+            window.addEventListener("mouseup", slideFinish);
+            /*or touched (for touch screens:*/
+            slider.addEventListener("touchstart", slideReady);
+            /*and released (for touch screens:*/
+            window.addEventListener("touchend", slideFinish);
+            function slideReady(e) {
+              /*prevent any other actions that may occur when moving over the image:*/
+              e.preventDefault();
+              /*the slider is now clicked and ready to move:*/
+              clicked = 1;
+              /*execute a function when the slider is moved:*/
+              window.addEventListener("mousemove", slideMove);
+              window.addEventListener("touchmove", slideMove);
+            }
+            function slideFinish() {
+              /*the slider is no longer clicked:*/
+              clicked = 0;
+            }
+            function slideMove(e) {
+              var pos;
+              /*if the slider is no longer clicked, exit this function:*/
+              if (clicked == 0) return false;
+              /*get the cursor's x position:*/
+              pos = getCursorPos(e)
+              /*prevent the slider from being positioned outside the image:*/
+              if (pos < 0) pos = 0;
+              if (pos > w) pos = w;
+              /*execute a function that will resize the overlay image according to the cursor:*/
+              slide(pos);
+            }
+            function getCursorPos(e) {
+              var a, x = 0;
+              e = (e.changedTouches) ? e.changedTouches[0] : e;
+              /*get the x positions of the image:*/
+              a = img.getBoundingClientRect();
+              /*calculate the cursor's x coordinate, relative to the image:*/
+              x = e.pageX - a.left;
+              /*consider any page scrolling:*/
+              x = x - window.pageXOffset;
+              return x;
+            }
+            function slide(x) {
+              /*resize the image:*/
+              img.style.width = x + "px";
+              /*position the slider:*/
+              slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            }
+          }
+        }
+        </script>
+
+
+
+
+
+
+
   </head>
   <body>
 
+    <div class="FondSimpleDessin">
+
+
+        <form class="presentation-3D">
+          <p style="color:white; text-align:center; vertical-align: middle;">
+            Ma galerie de dessins :
+          </p>
+        </form>
+
+        <a href="index.html" class="previous">&laquo;</a>
 
 
 
 
+        <div class="row_2">
+
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Assassin's Creed Black Flag Wallpaper.png" alt="27/09/2021" style="width:100%">
+              <h3>27/09/2021</h3>
+              <p>Cette image est un fond d'écran pour PC avec le logo d'Assassin's Creed Blackflag. On ne le voit pas bien mais une fois en fond d'écran, on voit qu'il y a un fond en texture cuir.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/Adrian.png" alt="11/02/2021" style="width:100%">
+              <h3>11/02/2021</h3>
+              <p>J'ai redessiné mon frère à partir d'une image.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Matt logo papa 7.png" alt="11/02/2021" style="width:100%">
+              <h3>11/02/2021</h3>
+              <p>Ce logo a été demandé par mon père avec des requêtes précises.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/futuristic.png" alt="03/02/2021" style="width:100%">
+              <h3>03/02/2021</h3>
+              <p>Futuristic...</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Wallpaper hexagon basique.png" alt="10/01/2021" style="width:100%">
+              <h3>10/01/2021</h3>
+              <p>Yey est un mot inventé qui ne veut pas dire quelque chose de réellement précis... Il est très utile pour nommer des projets qui ne reverront jamais le jour.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/mage stylax.png" alt="20/10/2020" style="width:100%">
+              <h3>20/10/2020</h3>
+              <p>Ce dessin ma permit de travailler sur les effets de lumière.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/brain use it.png" alt="06/09/2020" style="width:100%">
+              <h3>06/09/2020</h3>
+              <p>Ce fond d'écran très inspirant m'a servi à travailler sur les reflets.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Naruto Uzumaki.png" alt="29/08/2020" style="width:100%">
+              <h3>29/08/2020</h3>
+              <p>Naruto, qui vient du manga Naruto, à été dessiné à partir d'une image.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Banière Hugo OnemanLawSon.png" alt="29/06/2020" style="width:100%">
+              <h3>29/06/2020</h3>
+              <p>Cette image est une banière Youtube qu'un ami m'a demandé de faire. Louis de Funès et Bourvil ont été redessiné à partir d'un model.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Mirio Togata.png" alt="06/06/2020" style="width:100%">
+              <h3>06/06/2020</h3>
+              <p>Mirio Togata, un personnage du monde de My Hero Academia, fait à partir d'un model.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/FIFOU !.png" alt="07/02/2020" style="width:100%">
+              <h3>07/02/2020</h3>
+              <p>Ce personnage m'a servi d'entraînement aux effets de flou et de lumières..</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <div class="Compareur">
+                <div class="img-comp-container">
+                  <div class="img-comp-img">
+                    <img src="Book_dessins/Tour avant.png" width="500">
+                  </div>
+                  <div class="img-comp-img img-comp-overlay">
+                    <img src="Book_dessins/Tour apres.png" width="500">
+                  </div>
+                </div>
+              </div>
+              <h3> 29/04/2020 || 21/03/2020</h3>
+              <p>Fond de chargement d'un jeu fait sur Unity. On peut voir l'évolution entre Le dessin final / Le brouillon. C'est la version 2.0/</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/sasuke wallpaper.png" alt="28/04/2020" style="width:100%">
+              <h3>28/04/2020</h3>
+              <p>Ce dessin est un entraînement sur les effets de lumière.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/Control le feu.png" alt="07/02/2020" style="width:100%">
+              <h3>07/02/2020</h3>
+              <p>Ce personnage m'a permis de m'entraîner sur le corp humain et les mains.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/IZUKU MIDORIA 10 01 20.png" alt="07/01/2020" style="width:100%">
+              <h3>07/01/2020</h3>
+              <p>Izuku Midoriya dessiné à partir d'un calque.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/le croquis de Mathieu 4.png" alt="27/12/2019" style="width:100%">
+              <h3>27/12/2019</h3>
+              <p>Ce dessin devait être une image pour le fond de chargement d'un jeu codé avec Unity. Version 1.0.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+            <img src="Book_dessins/Le Père Noël.png" alt="25/12/2019" style="width:100%">
+              <h3>25/12/2019</h3>
+              <p>Ce père Noël est mon deuxième dessin.</p>
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="content">
+              <img src="Book_dessins/Mon premier dessin avc la tablette graphique.png" alt="25/12/2019" style="width:100%">
+              <h3>25/12/2019</h3>
+              <p>Cette image est mon premier dessin fait sur tablette graphique.</p>
+            </div>
+          </div>
 
 
 
-
-
-
-
-
-    <div class="FondSimple">
-
-      <a href="index.html" class="previous">&laquo;</a>
-
-      <form class="presentation-3D">
-        <p style="color:white; text-align:center; vertical-align: middle;">
-          Mes meilleures créations 3D qui ont, pour quelques-unes, servi à des jeux que j'ai codés avec Unity :
-        </p>
-
-      </form>
-
-
-      </div>
-
-
-
-          <!-- Container for the image gallery -->
-    <div class="container2">
-
-      <!-- Full-width images with number text -->
-      <div class="mySlides">
-        <div class="numbertext">1 / 6</div>
-          <img src="Book_dessins/oculus rift.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-          <img src="Book_dessins/sabre evee bloom bleu final.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 6</div>
-          <img src="Book_dessins/Iron man Holo.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 6</div>
-          <img src="Book_dessins/la_octane.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">5 / 6</div>
-          <img src="Book_dessins/la_octane_2.png" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">6 / 6</div>
-          <img src="Book_dessins/assassins creed.jpg" style="width:100%">
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <!-- Image text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-
-      <!-- Thumbnail images -->
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="Book_dessins/oculus rift.png" style="width:40%" onclick="currentSlide(1)" alt="Casque de réalité virtuelle - Réalisé sur blender">
+        <!-- END ROW -->
         </div>
-        <div class="column">
-          <img class="demo cursor" src="Book_dessins/sabre evee bloom bleu final.png" style="width:40%" onclick="currentSlide(2)" alt="Sabre - Réalisé sur blender">
+
+        <div class="content">
+          <h3>Mes futurs travaux</h3>
+          <p>Des dessins sont en cours de création ou sont en train d'être imaginés...</p>
+          <p>Je les posterais dès qu'ils seront près !</p>
         </div>
-        <div class="column">
-          <img class="demo cursor" src="Book_dessins/Iron man Holo.png" style="width:40%" onclick="currentSlide(3)" alt="Iron Man Hologramme - Réalisé sur blender à partir de l'import du personnage sans texture">
+
+        <!-- END MAIN -->
         </div>
-        <div class="column">
-          <img class="demo cursor" src="Book_dessins/la_octane.png" style="width:40%" onclick="currentSlide(4)" alt="Octane Rocket League - Réalisé sur blender à partir d'une image">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="Book_dessins/la_octane_2.png" style="width:40%" onclick="currentSlide(5)" alt="Octane Rocket League - Réalisé sur blender à partir d'une image">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="Book_dessins/assassins creed.jpg" style="width:40%" onclick="currentSlide(6)" alt="Assassin's Creed Scene - Réalisé sur blender avec l'import de l'image de fond">
-        </div>
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+        /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+        initComparisons();
+        </script>
 
 
     </div>
-
-
-
-
-
-
-
-    <script>
-      /* doit être à la fin */
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
-
-
-
-
-
-
 
 
 
