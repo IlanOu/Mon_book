@@ -742,6 +742,9 @@ html {
   float: left;
   width: 24.89%;
 	padding-bottom: 150px;
+	height: 850px;
+
+  background: rgba(10, 13, 22, 0.8);
 }
 
 /* Clear floats after rows */
@@ -753,8 +756,12 @@ html {
 
 /* Content */
 .content {
-  background-color: #222;
+  background: rgba(10, 13, 22, 0.8);
   padding: 10px;
+}
+
+.content:hover {
+	border: 2px solid #f20055;
 }
 
 @media screen and (max-width: 900px) {
