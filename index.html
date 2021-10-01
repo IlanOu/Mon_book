@@ -55,19 +55,86 @@
         }
       }
 
+
+
+
+
+
       function showhide2(){
         var fond = document.getElementById("fondecranwola");
         var y = document.getElementById("creations")
 
+        var ajouter = document.getElementById("apropos3");
+
         if (y.style.display === "none"){
           fond.style.height = "300%";
           y.style.display = "block";
-          ajouter.classList.add("apropos2");
+          ajouter.classList.add("apropos3");
+          ajouter.style.visibility = "visible";
+
+
+        }
+
+
+
+
+        var fond2 = document.getElementById("fondecranwola");
+        var x2 = document.getElementById("about me");
+
+        var ajouter2 = document.getElementById("apropos2");
+
+
+        if (x2.style.display === "none"){
+          fond2.style.height = "200%";
+          x2.style.display = "block";
+          ajouter2.classList.add("apropos2");
 
 
         }
       }
 
+
+      function showhide3(){
+        var fond = document.getElementById("fondecranwola");
+        var y = document.getElementById("fin")
+
+        if (y.style.display === "none"){
+          fond.style.height = "400%";
+          y.style.display = "block";
+
+
+        }
+
+
+        var fond2 = document.getElementById("fondecranwola");
+        var x2 = document.getElementById("about me");
+
+        var ajouter2 = document.getElementById("apropos2");
+
+
+        if (x2.style.display === "none"){
+          fond2.style.height = "200%";
+          x2.style.display = "block";
+          ajouter2.classList.add("apropos2");
+
+
+        }
+
+
+        var fond3 = document.getElementById("fondecranwola");
+        var x3 = document.getElementById("creations")
+
+        var ajouter3 = document.getElementById("apropos3");
+
+        if (x3.style.display === "none"){
+          fond3.style.height = "300%";
+          x3.style.display = "block";
+          ajouter3.classList.add("apropos3");
+          ajouter3.style.visibility = "visible";
+
+
+        }
+      }
 
 
 
@@ -120,7 +187,7 @@
         <a href="#creations" onclick="showhide2()"> Mes créations</a>
         <a></a>
         <a></a>
-        <a href="#fin"> Fin</a>
+        <a href="#fin" onclick="showhide3()"> Fin</a>
         <a></a>
         <a></a>
       </div>
@@ -239,6 +306,35 @@
 
 
       </div>
+
+
+      <a href="#fin" class="lien3" onclick="showhide3()">
+        <form id="apropos3" style="visibility: hidden">
+
+          <h3>
+            <b>▼</b>
+          </h3>
+
+        </form>
+      </a>
+
+
+
+      <div class="Findelapage" id="fin" style="display:none">
+
+
+        <form class="aproposdemoi" >
+
+          <h4 style="color:white; text-align:center;">Contacts :</h4>
+          <div style="text-align:center;">
+              <a href="https://github.com/IlanOu" target="_blank"><img src="https://www.shareicon.net/data/2015/09/15/101512_logo_512x512.png" alt=" Github" style="width: 50px; margin-right: 20px; margin-left: 20px;"/></a>
+              <a href="https://instagram.com/yey___design?utm_medium=copy_link" target="_blank"><img src="https://bassin-arcachon.com/wp-content/uploads/2017/02/logo-instagram-blanc.png" alt="Instagram" style="text-align: center; width: 50px; margin-right: 20px; margin-left: 20px;"/></a>
+              <a href="mailto:ilan.outhier04@gmail.com"><img src="http://www.autoecole-vala.fr/img/mail_icon.png" alt="Email" style="width: 50px; margin-right: 20px; margin-left: 20px;"/></a>
+          </div>
+        </form>
+
+
+
 
     </div>
   </body>
