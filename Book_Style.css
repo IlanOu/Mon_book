@@ -425,6 +425,23 @@ html {
 
 
 
+.CodeBox2 {
+  position: relative;
+
+
+
+  max-width: 800px;
+  padding: 16px;
+
+  background: rgba(10, 13, 22, 1);
+  height: auto;
+  width: auto;
+	border: 2px solid #f20055;
+}
+
+
+
+
 .FondSimple {
 
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
@@ -794,7 +811,7 @@ html {
 
 
 .row_2 {
-  margin: 350px -16px;
+  margin-top: 350px;
 }
 
 /* Add padding BETWEEN each column */
@@ -840,4 +857,35 @@ html {
   .column_2 {
     width: 100%;
   }
+}
+
+
+
+
+
+.row_3 {
+  margin: 40px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row_3,
+.row_3 > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column_3 {
+  float: left;
+  width: 24.89%;
+	padding-bottom: 150px;
+	height: 750px;
+
+  background: rgba(10, 13, 22, 0.8);
+}
+
+/* Clear floats after rows */
+.row_3:after {
+  content: "";
+  display: table;
+  clear: both;
 }
