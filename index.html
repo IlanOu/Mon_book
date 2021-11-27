@@ -65,7 +65,9 @@
         var y = document.getElementById("creations")
 
         var ajouter = document.getElementById("apropos3");
+        var montre = document.getElementById("Faitvoir");
 
+        montre.style.visibility = "visible";
         if (y.style.display === "none"){
           fond.style.height = "300%";
           y.style.display = "block";
@@ -83,11 +85,11 @@
 
         var ajouter2 = document.getElementById("apropos2");
 
-
         if (x2.style.display === "none"){
           fond2.style.height = "200%";
           x2.style.display = "block";
           ajouter2.classList.add("apropos2");
+
 
 
         }
@@ -123,7 +125,6 @@
 
         var fond3 = document.getElementById("fondecranwola");
         var x3 = document.getElementById("creations")
-
         var ajouter3 = document.getElementById("apropos3");
 
         if (x3.style.display === "none"){
@@ -135,9 +136,6 @@
 
         }
       }
-
-
-
 
 
 
@@ -202,15 +200,22 @@
       </div>
 
 
-      <a href="#about me" class="lien" onclick="showhide()">
-      <form class="apropos" >
+        <a href="#about me" onclick="showhide()" class="Bontonclasse" style="top: 710px;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Voir plus
+        </a>
+
+      <!-- <form class="apropos" >
 
         <h3>
           <b>▼</b>
         </h3>
 
-      </form>
-      </a>
+      </form> -->
+
 
       <div class="about" id="about me" style="display:none">
 
@@ -238,15 +243,14 @@
 
 
 
-
-        <a href="#creations" class="lien2" onclick="showhide2()">
-        <form id="apropos2">
-
-          <h3>
-            <b>▼</b>
-          </h3>
-
-        </form>
+        <a href="#creations" onclick="" class="Bontonclasse" style="top: 150px; color: #f20055; visibility: hidden;">
+        </a>
+        <a href="#creations" onclick="showhide2()" class="Bontonclasse" style="top: 150px; color: #f20055;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Encore plus
         </a>
 
 
@@ -305,18 +309,18 @@
           </div>
 
 
-      </div>
+        </div>
 
 
-      <a href="#mecontacter" class="lien3" onclick="showhide3()">
-        <form id="apropos3" style="visibility: hidden">
+        <a href="#mecontacter" id="Faitvoir" onclick="showhide3()" class="Bontonclasse" style="top: 80px; color: #f20055; visibility: hidden;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Voir tout
+        </a>
 
-          <h3>
-            <b>▼</b>
-          </h3>
 
-        </form>
-      </a>
 
 
 
