@@ -467,11 +467,11 @@ html {
 
 .FondSimple {
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
 
-  /*background: linear-gradient(rgba(19,24,42, 0.9), rgba(10, 13, 22, 0.8));*/
+  background: linear-gradient(rgba(19,24,42, 1), rgba(10, 13, 22, 1));
   min-height: 150%;
-  height: 150%;
+  height: 480%;
 	/*background-position: center center;*/
   background-repeat: no-repeat;
   background-attachment: inherit;
@@ -1026,3 +1026,36 @@ html {
 
 
 /* FOND ANIME*/
+
+
+.dot {
+  height: 2px;
+  width: 2px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+	z-index: 3;
+	position: absolute;
+	top: 50%;
+	box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6), 0px 0px 8px rgba(255, 255, 255, 0.4), 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+
+.dot{
+	animation:dot 10s linear both;
+}
+
+@keyframes dot {
+  0% {
+            transform: translateY(0);
+						opacity: 1;
+  }
+	80%{
+						opacity: 1;
+	}
+  100% {
+            transform: translateY(-100px);
+						opacity: 0;
+  }
+}
