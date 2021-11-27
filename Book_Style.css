@@ -82,7 +82,7 @@ html {
   z-index: 1;
   top: 0;
   left: -185px;
-  background-color: #0a0d16/*#14192c*/;
+  background-color: rgba(10, 13, 22, 0.5)/*#0a0d16/*#14192c*/;
   overflow-x: hidden;
   padding-top: 16px;
 
