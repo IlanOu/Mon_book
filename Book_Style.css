@@ -28,10 +28,29 @@ html {
 }
 
 
+html {
+    background: linear-gradient(-45deg, #ff2370, #161b2e, #101321, #000000);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 
 .bgimg {
 
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(imgs/fond.jpg)/*url(imgs/Fond.jpg)*/;
   /*background: linear-gradient(rgba(19,24,42, 0.9), rgba(10, 13, 22, 0.8));*/
   min-height: 100%;
   height: 100%;
@@ -40,6 +59,7 @@ html {
   background-repeat: repeat-x;
   background-attachment: inherit;
   background-size: contain;
+	/*background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);*/
   /*scroll-behavior: smooth;*/
 
 
@@ -175,7 +195,7 @@ html {
 }
 .presentation:hover {
   background: rgba(10, 13, 22, 0.5);
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
 
 }
 
@@ -183,6 +203,9 @@ html {
     display: table-cell;
     vertical-align: middle;
 }
+
+
+
 
 
 
@@ -201,7 +224,7 @@ html {
   margin: auto;
 
   background: rgba(10, 13, 22, 0.8);
-	border: 2px solid #f20055;
+	border: 1px solid #f20055;
   height: auto;
   width: auto;
 
@@ -237,7 +260,7 @@ html {
   width: 99%;
   color: #fff;
 
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
   background: rgba(242, 0, 85, 0.1);
   height: auto;
   text-align: center;
@@ -246,7 +269,7 @@ html {
 }
 .apropos:hover {
   background: rgba(242, 0, 85, 0.5);
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
 
   cursor: pointer;
 }
@@ -267,7 +290,7 @@ html {
   width: 99%;
   color: #fff;
 
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
   background: rgba(242, 0, 85, 0.1);
   height: auto;
   text-align: center;
@@ -276,7 +299,7 @@ html {
 }
 .apropos2:hover {
   background: rgba(242, 0, 85, 0.5);
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
 
   cursor: pointer;
 }
@@ -298,7 +321,7 @@ html {
   width: 99%;
   color: #fff;
 
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
   background: rgba(242, 0, 85, 0.1);
   height: auto;
   text-align: center;
@@ -308,7 +331,7 @@ html {
 }
 .apropos3:hover {
   background: rgba(242, 0, 85, 0.5);
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
 
   cursor: pointer;
 }
@@ -420,7 +443,7 @@ html {
 }
 .CodeBox:hover {
   background: rgba(10, 13, 22, 0.8);
-  border: 2px solid #f20055;
+  border: 1px solid #f20055;
 }
 
 
@@ -436,7 +459,7 @@ html {
   background: rgba(10, 13, 22, 1);
   height: auto;
   width: auto;
-	border: 2px solid #f20055;
+	border: 1px solid #f20055;
 }
 
 
@@ -507,13 +530,13 @@ html {
 
 
   position: relative;
-  background: rgba(10, 13, 22, 0.0);
+  background: rgba(10, 13, 22, 1);
 
 }
 
 .colone1:hover {
-  background: rgba(10, 13, 22, 0.5);
-  border: 2px solid #f20055;
+  background: rgba(10, 13, 22, 1);
+  border: 1px solid #f20055;
 
 	cursor: pointer;
 
@@ -592,7 +615,7 @@ html {
 	padding: 30px;
 
 
-	border: 2px solid #f20055;
+	border: 1px solid #f20055;
   /*max-width: 300px;*/
 
   background: rgba(10, 13, 22, 0.8);
@@ -604,7 +627,7 @@ html {
 }
 .presentation-3D:hover {
   /*background: rgba(10, 13, 22, 0.5);
-  border: 2px solid #f20055;*/
+  border: 1px solid #f20055;*/
 	box-shadow: 0 0 11px rgba(242, 0, 85, 0.5);
 }
 
@@ -614,7 +637,7 @@ html {
 
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-1ox;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -649,7 +672,7 @@ html {
   color: white;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0 3px 3px 0;
+  border-1adius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -657,7 +680,7 @@ html {
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-1adius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -718,7 +741,7 @@ html {
 /* Partie Dessin _________________________________________________________________________________________________________*/
 
 
-* {box-sizing: border-box;}
+* {box-sizing: border-1ox;}
 
 .img-comp-container {
   position: relative;
@@ -747,7 +770,7 @@ html {
   height: 30px;
   background-color: #f20055;
   opacity: 0.7;
-  border-radius: 50%;
+  border-1adius: 50%;
 }
 
 .Compareur {
@@ -776,7 +799,7 @@ html {
 	margin: 10px;
 	font-size: 20px;
 
-	border: 2px solid #f20055;
+	border: 1px solid #f20055;
   background: rgba(10, 13, 22, 0.8);
 	text-align: center;
 }
@@ -798,7 +821,7 @@ html {
 	right: 56%;
 	left: 44%;
 
-	border: 2px solid #f20055;
+	border: 1px solid #f20055;
   background: rgba(10, 13, 22, 0.8);
 	text-align: center;
 
@@ -844,7 +867,7 @@ html {
 }
 
 .content:hover {
-	border: 2px solid #f20055;
+	border: 1px solid #f20055;
 }
 
 @media screen and (max-width: 900px) {
@@ -889,3 +912,117 @@ html {
   display: table;
   clear: both;
 }
+
+/* Bouton Classe ---------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+.Bontonclasse{
+
+		font-weight: bold;
+		font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+
+    color: #f20055;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-left: 45%;
+
+}
+.Bontonclasse:hover{
+    background: #f20055;
+    color: white;
+    box-shadow: 0 0 5px #f20055,
+                0 0 25px #f20055,
+                0 0 50px #f20055,
+                0 0 200px #f20055;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.Bontonclasse:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.Bontonclasse:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.Bontonclasse span{
+    position: absolute;
+    display: block;
+}
+.Bontonclasse span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f20055);
+    animation: animate1 3s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.Bontonclasse span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f20055);
+    animation: animate2 3s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.Bontonclasse span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f20055);
+    animation: animate3 3s linear infinite;
+    animation-delay: 1.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.Bontonclasse span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f20055);
+    animation: animate4 3s linear infinite;
+    animation-delay: 2.25s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+/* FOND ANIME*/
