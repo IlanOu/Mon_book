@@ -142,6 +142,7 @@
 
 
 
+
     </script>
 
 
@@ -149,6 +150,12 @@
 
 
     <div class="bgimg" id="fondecranwola" onscroll="showhide()">
+
+
+      <span class="dot"></span>
+
+
+
 
       <form class="presentation">
         <p style="color:white; text-align:center; vertical-align: middle;">
@@ -341,5 +348,71 @@
 
 
     </div>
+
+      <script>
+
+      var doti = [];
+
+
+      function aaa(){
+          var parent = document.getElementsByClassName("bgimg");
+
+          var child = document.getElementsByClassName("dot");
+          var clone = child[0].cloneNode(true);
+
+
+
+          var winWidth = window.innerWidth;
+          var winHeight = window.innerHeight;
+
+          randomLeft = Math.random() * (winWidth - 0) + 0;
+          randomTop = Math.random() * (winHeight * 4 - 0) + 0;
+
+          clone.style.left = randomLeft +"px";
+          clone.style.top = randomTop +"px";
+
+          parent[0].appendChild(clone);
+          doti.push(clone);
+
+          if (doti.length > 100){
+            doti.shift();
+          }
+
+          console.log(doti.length);
+
+          setTimeout(aaa, 50);
+
+      }
+
+
+      function r(){
+        // collect all the divs
+        var divs = document.getElementsByClassName('dot');
+
+
+
+        // get window width and height
+        var winWidth = window.innerWidth;
+        var winHeight = window.innerHeight;
+
+
+        // i stands for "index". you could also call this banana or haircut. it's a variable
+        for ( var i=0; i < divs.length; i++ ) {
+            // shortcut! the current div in the list
+            var thisDiv = divs[i];
+
+            randomLeft = Math.random() * (winWidth - 0) + 0;
+            randomTop = Math.random() * (winHeight - 0) + 0;
+
+            thisDiv.style.left = randomLeft +"px";
+            thisDiv.style.top = randomTop +"px";
+
+        }
+        aaa()
+      }
+      r();
+
+    </script>
+
   </body>
 </html>
