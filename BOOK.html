@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <title>Ilan Outhier</title>
+  <meta charset="UTF-8">
+  <head>
+      <meta content='width=device-width, initial-scale=1' name='viewport'/>
+      <link rel="stylesheet" type="text/css" href="Book_Style.css" />
+      <link rel="icon" href="imgs/irregular_quadrilateral_48px.png">
+  </head>
+
+
+  <body>
+
+    <script>
+
+      var yey = new Boolean("false");
+
+      function play(x) {
+        x.classList.toggle("change");
+
+
+        if (yey)
+        {
+          const the_div = document.querySelector(".sidebar");
+          the_div.classList.add('move-right');
+          the_div.classList.remove('move-left');
+          yey = !yey
+        }
+        else
+        {
+          const the_div = document.querySelector(".sidebar");
+          the_div.classList.add('move-left');
+          the_div.classList.remove('move-right');
+          yey = !yey
+        }
+      }
+
+
+
+
+
+      function showhide(){
+        add_frame();
+        var fond = document.getElementById("fondecranwola");
+        var x = document.getElementById("about me");
+
+        var ajouter = document.getElementById("apropos2");
+
+
+        if (x.style.display === "none"){
+          fond.style.height = "200%";
+          x.style.display = "block";
+          ajouter.classList.add("apropos2");
+
+
+        }
+      }
+
+
+
+
+
+
+      function showhide2(){
+        add_frame();
+        var fond = document.getElementById("fondecranwola");
+        var y = document.getElementById("creations")
+
+        var ajouter = document.getElementById("apropos3");
+        var montre = document.getElementById("Faitvoir");
+
+        montre.style.visibility = "visible";
+        if (y.style.display === "none"){
+          fond.style.height = "300%";
+          y.style.display = "block";
+          ajouter.classList.add("apropos3");
+          ajouter.style.visibility = "visible";
+
+
+        }
+
+
+
+
+        var fond2 = document.getElementById("fondecranwola");
+        var x2 = document.getElementById("about me");
+
+        var ajouter2 = document.getElementById("apropos2");
+
+        if (x2.style.display === "none"){
+          fond2.style.height = "200%";
+          x2.style.display = "block";
+          ajouter2.classList.add("apropos2");
+
+
+
+        }
+      }
+
+
+      function showhide3(){
+        add_frame();
+        var fond = document.getElementById("fondecranwola");
+        var y = document.getElementById("mecontacter")
+
+        if (y.style.display === "none"){
+          fond.style.height = "400%";
+          y.style.display = "block";
+
+
+        }
+
+
+        var fond2 = document.getElementById("fondecranwola");
+        var x2 = document.getElementById("about me");
+
+        var ajouter2 = document.getElementById("apropos2");
+
+
+        if (x2.style.display === "none"){
+          fond2.style.height = "200%";
+          x2.style.display = "block";
+          ajouter2.classList.add("apropos2");
+
+
+        }
+
+
+        var fond3 = document.getElementById("fondecranwola");
+        var x3 = document.getElementById("creations")
+        var ajouter3 = document.getElementById("apropos3");
+
+        if (x3.style.display === "none"){
+          fond3.style.height = "300%";
+          x3.style.display = "block";
+          ajouter3.classList.add("apropos3");
+          ajouter3.style.visibility = "visible";
+
+
+        }
+      }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+    <div class="bgimg" id="fondecranwola" onscroll="showhide()">
+
+
+      <span class="dot"></span>
+
+
+
+
+      <form class="presentation">
+        <p style="color:white; text-align:center; vertical-align: middle;">
+          Bonjour, je suis <b>Ilan Outhier.</b><br>
+          Je dessine, j'anime, je créé des objets 3D, je code...
+        </p>
+
+
+
+
+      </form>
+
+
+
+      <div class="container" onclick="play(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+
+      <div class="sidebar">
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a href="#top">Accueil</a>
+        <a></a>
+        <a></a>
+        <a href="#about me" onclick="showhide()"> Qui suis-je ?</a>
+        <a></a>
+        <a></a>
+        <a href="#creations" onclick="showhide2()"> Mes créations</a>
+        <a></a>
+        <a></a>
+        <a href="#mecontacter" onclick="showhide3()"> Me contacter</a>
+        <a></a>
+        <a></a>
+      </div>
+
+
+      <div class="text" >
+        <hr style="margin:auto; width:100; color: #f20055;">
+        <h1 name="home" style="color:white" id="home">ILAN OUTHIER</h1>
+        <hr style="margin:auto; width:20%; color: #f20055;"> <!-- Ligne -->
+
+
+      </div>
+
+
+        <a href="#about me" onclick="showhide()" class="Bontonclasse" style="top: 710px;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Voir plus
+        </a>
+
+      <!-- <form class="apropos" >
+
+        <h3>
+          <b>▼</b>
+        </h3>
+
+      </form> -->
+
+
+      <div class="about" id="about me" style="display:none">
+
+
+
+        <form class="aproposdemoi" >
+
+          <h4 style="color:white; text-align:center;">Bienvenue dans mon portfolio. </h4>
+          <h4 style="color:white; text-align:center;">Je suis <b>Ilan Outhier</b>, lycéen au lycée Louis Lachenal à Argonay (74).</h4>
+
+          <br><br><br>
+
+          <p style="color:white; text-align:center;"><b>J'ai réalisé plusieurs créations de différents types :</b></p>
+
+          <p style="color:white; text-align:center;"> -Du dessin  <br><br>
+           -De l'animation 2D <br><br>
+           -De la modélisation 3D (création d'objets ou de personnages pour des jeux vidéos) <br><br>
+           -Du code (html/CSS/JS/python/C#) <br><br>
+          Et je vous présente tout ça dans ce portfolio.</p><br><br><br>
+
+        </form>
+
+
+
+
+
+
+        <a href="#creations" onclick="" class="Bontonclasse" style="top: 150px; color: #f20055; visibility: hidden;">
+        </a>
+        <a href="#creations" onclick="showhide2()" class="Bontonclasse" style="top: 150px; color: #f20055;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Encore plus
+        </a>
+
+
+        <div class="crea" id="creations" style="display:none">
+
+
+
+          <form class="MesCreations" >
+            <p style="color:white; text-align:center; "><b>Mes créations :</b></p>
+
+
+          </form>
+
+
+          <div class="ligne">
+
+           <!-- 3D -->
+
+           <a href="3D.html">
+
+
+              <form class="colone1"  style="vertical-align: top;">
+                <p style="color:white; text-align:center; "><b>3D</b></p>
+                <img src="imgs/Octanesite.png"/ width=100%;>
+              </form>
+
+
+            </a>
+
+            <a href="Dessin.html">
+              <!-- Dessins -->
+
+
+
+              <form class="colone1"  style="vertical-align: top;">
+                <p style="color:white; text-align:center; "><b>Dessins</b></p>
+                <img src="imgs/miriosite.png"/ width=100%;>
+              </form>
+
+            </a>
+
+            <a href="Code.html">
+              <!-- Code -->
+
+
+
+              <form class="colone1"  style="vertical-align: top;">
+                <p style="color:white; text-align:center; "><b>Code</b></p>
+                <img src="imgs/codesite.png"/ width=100%;>
+              </form>
+
+            </a>
+
+
+
+          </div>
+
+
+        </div>
+
+
+        <a href="#mecontacter" id="Faitvoir" onclick="showhide3()" class="Bontonclasse" style="top: 80px; color: #f20055; visibility: hidden;">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Voir tout
+        </a>
+
+
+
+
+
+      <div class="Findelapage" id="mecontacter" style="display:none">
+
+
+        <form class="aproposdemoi" >
+
+          <h4 style="color:white; text-align:center;">Me contacter :</h4>
+          <div style="text-align:center;">
+              <a href="https://github.com/IlanOu" target="_blank"><img src="https://www.shareicon.net/data/2015/09/15/101512_logo_512x512.png" alt=" Github" style="width: 50px; margin-right: 20px; margin-left: 20px;"/></a>
+              <a href="https://instagram.com/yey___design?utm_medium=copy_link" target="_blank"><img src="https://bassin-arcachon.com/wp-content/uploads/2017/02/logo-instagram-blanc.png" alt="Instagram" style="text-align: center; width: 50px; margin-right: 20px; margin-left: 20px;"/></a>
+              <a href="mailto:ilan.outhier04@gmail.com"><img src="http://www.autoecole-vala.fr/img/mail_icon.png" alt="Email" style="width: 50px; margin-right: 20px; margin-left: 20px;"/></a>
+          </div>
+        </form>
+
+
+
+
+    </div>
+
+      <script>
+
+      var doti = [];
+
+      var activ_frame = 1;
+      function aaa(){
+          var parent = document.getElementsByClassName("bgimg");
+
+          var child = document.getElementsByClassName("dot");
+          var clone = child[0].cloneNode(true);
+
+
+
+          var winWidth = window.innerWidth;
+          var winHeight = window.innerHeight;
+
+
+          randomLeft = Math.random() * (winWidth - 15) + 0;
+          randomTop = Math.random() * (winHeight * activ_frame - 0) + 0;
+
+
+
+          clone.style.left = randomLeft + "px";
+          clone.style.top = randomTop + "px";
+
+          parent[0].appendChild(clone);
+          doti.push(clone);
+
+          if (doti.length > 100){
+            doti.shift();
+          }
+
+          console.log(doti.length);
+
+          setTimeout(aaa, 50);
+
+      }
+
+
+      function r(){
+        // collect all the divs
+        var divs = document.getElementsByClassName('dot');
+
+
+
+        // get window width and height
+        var winWidth = window.innerWidth;
+        var winHeight = window.innerHeight;
+
+
+        // i stands for "index". you could also call this banana or haircut. it's a variable
+        for ( var i=0; i < divs.length; i++ ) {
+            // shortcut! the current div in the list
+            var thisDiv = divs[i];
+
+            randomLeft = Math.random() * (winWidth - 0) + 0;
+            randomTop = Math.random() * (winHeight - 0) + 0;
+
+            thisDiv.style.left = randomLeft +"px";
+            thisDiv.style.top = randomTop +"px";
+
+        }
+        aaa()
+      }
+
+      function add_frame(){
+        activ_frame+=1; 
+      }
+
+      r();
+
+    </script>
+
+  </body>
+</html>
