@@ -1,0 +1,279 @@
+html{
+  background-color: #191e26;
+  color: white;
+  font-family: SofiaPro;
+}
+
+@font-face {
+  font-family: SofiaPro;
+  src: url(Fonts/sofiapro-light.otf);
+}
+
+
+
+
+.Page {
+  margin: 2% 15%;
+}
+
+.Bandeau {
+
+}
+
+.Bandeau:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.BandeauColumn {
+  float: left;
+  width: 50%;
+}
+
+.BandeauRedirect {
+  margin: 0px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#CodePart:hover {
+  margin: 0px 15px;
+  color: #f10138;
+  text-decoration: none;
+}
+
+#DesignPart:hover {
+  margin: 0px 15px;
+  color: #4dc843;
+  text-decoration: none;
+}
+
+#MoiPart:hover {
+  margin: 0px 15px;
+  color: #ff6200;
+  text-decoration: none;
+}
+
+
+.Titre {
+  color: #f10138;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
+
+.Demo{
+  margin-top: 2%;
+  text-align: center;
+  z-index: 5;
+  min-height: 80.5%;
+}
+
+.DemoBandeau{
+  margin-bottom: 2%;
+}
+
+.DemoBandeau a {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.DemoBandeau a:hover{
+  margin: 0px 10px;
+  cursor: pointer;
+  color: #f10138;
+}
+
+#Python {
+  display: block;
+  /*border: 10px solid;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' width='11' height='11'><g fill='white'><rect width='1' height='5'/><rect y='6' width='1' height='5'/><rect x='10' y='6' width='1' height='5'/><rect x='10' width='1' height='5'/><rect width='5' height='1'/><rect y='10' width='5' height='1'/><rect x='6' y='10' width='5' height='1'/><rect x='6' width='5' height='1'/></g></svg>") 5;*/
+}
+
+#HTMLCSS {
+  display: none;
+  /*border: 10px solid;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' width='11' height='11'><g fill='white'><rect width='1' height='5'/><rect y='6' width='1' height='5'/><rect x='10' y='6' width='1' height='5'/><rect x='10' width='1' height='5'/><rect width='5' height='1'/><rect y='10' width='5' height='1'/><rect x='6' y='10' width='5' height='1'/><rect x='6' width='5' height='1'/></g></svg>") 5;*/
+
+}
+
+#Unity {
+  display: none;
+  /*border: 10px solid;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' width='11' height='11'><g fill='white'><rect width='1' height='5'/><rect y='6' width='1' height='5'/><rect x='10' y='6' width='1' height='5'/><rect x='10' width='1' height='5'/><rect width='5' height='1'/><rect y='10' width='5' height='1'/><rect x='6' y='10' width='5' height='1'/><rect x='6' width='5' height='1'/></g></svg>") 5;*/
+
+}
+
+#Div3D{
+  display: block;
+  /*border: 10px solid;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' width='11' height='11'><g fill='white'><rect width='1' height='5'/><rect y='6' width='1' height='5'/><rect x='10' y='6' width='1' height='5'/><rect x='10' width='1' height='5'/><rect width='5' height='1'/><rect y='10' width='5' height='1'/><rect x='6' y='10' width='5' height='1'/><rect x='6' width='5' height='1'/></g></svg>") 5;*/
+
+}
+
+#Div2D{
+  display: none;
+  /*border: 10px solid;
+  border-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 11' width='11' height='11'><g fill='white'><rect width='1' height='5'/><rect y='6' width='1' height='5'/><rect x='10' y='6' width='1' height='5'/><rect x='10' width='1' height='5'/><rect width='5' height='1'/><rect y='10' width='5' height='1'/><rect x='6' y='10' width='5' height='1'/><rect x='6' width='5' height='1'/></g></svg>") 5;*/
+
+}
+
+
+/* MONTRER LES IMAGES */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+
+.column img:hover{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #f10138;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.container:hover .overlay {
+  opacity:0;
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 8;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 97%;
+  width: 100%;
+  opacity: 0.95;
+  transition: .3s ease;
+  z-index: 5;
+
+}
+
+#rouge {
+  background-color: #f10138;
+}
+
+#violet {
+  background-color: #7e0081;
+}
+
+#bleu {
+  background-color: #00a0c4;
+}
+
+#vert {
+  background-color: #4dc843;
+}
+
+#jaune {
+  background-color: #ffac00;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+
+
+
+.lightEffect{
+
+  padding: 50%;
+  left: 0;
+  top: 100%;
+  position: fixed;
+  border-radius: 35%;
+  max-width: 150px;
+  max-height: 150px;
+
+  box-shadow: 0 0 220px 50px #00a0c4;
+  z-index: 1;
+}
+
+
+
+
+.columns3 {
+  float: left;
+  width: 33.33%;
+  height: 5%;
+  position: relative;
+  z-index: 5;
+}
+
+.row3Col{
+  margin-top: 2%;
+  position: relative;
+}
+
+
+.row3Col:after
+{
+  content: "";
+  display: table;
+  clear: both;
+  position: fixed;
+}
+
+
+#LinksButton a{
+  color: white;
+  text-decoration: none;
+
+}
