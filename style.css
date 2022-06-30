@@ -10,8 +10,6 @@ html{
 }
 
 
-
-
 .Page {
   margin: 2% 15%;
 }
@@ -62,7 +60,6 @@ html{
   letter-spacing: 4px;
   text-decoration: none;
 }
-
 
 .Demo{
   margin-top: 2%;
@@ -151,6 +148,7 @@ html{
   opacity: 0.7;
 }
 
+
 @media screen and (max-width: 800px) {
   .column {
     flex: 50%;
@@ -172,13 +170,9 @@ html{
   height: auto;
 }
 
-
 .container:hover .overlay {
   opacity:0;
 }
-
-
-
 
 .overlay {
   position: absolute;
@@ -194,25 +188,23 @@ html{
 
 }
 
+
 #rouge {
   background-color: #f10138;
 }
-
 #violet {
   background-color: #7e0081;
 }
-
 #bleu {
   background-color: #00a0c4;
 }
-
 #vert {
   background-color: #4dc843;
 }
-
 #jaune {
   background-color: #ffac00;
 }
+
 
 .text {
   color: white;
@@ -246,9 +238,6 @@ html{
   z-index: 1;
 }
 
-
-
-
 .columns3 {
   float: left;
   width: 33.33%;
@@ -257,23 +246,28 @@ html{
   z-index: 5;
 }
 
-.row3Col{
+.row3Col {
   margin-top: 2%;
   position: relative;
 }
 
-
-.row3Col:after
-{
+.row3Col:after {
   content: "";
   display: table;
   clear: both;
   position: fixed;
 }
 
-
 #LinksButton a{
   color: white;
   text-decoration: none;
 
+}
+
+
+
+.ClassLabel1 {
+  position: absolute;
+  z-index: 7;
+  background-color: white;
 }
