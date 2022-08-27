@@ -168,6 +168,7 @@ html{
   position: relative;
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .container:hover .overlay {
@@ -265,9 +266,64 @@ html{
 }
 
 
-
-.ClassLabel1 {
+.DerriereLabel {
+  display: none;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  z-index: 7;
-  background-color: white;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 6;
+}
+
+.ClassLabel {
+  display: none;
+  left: 25%;
+  top: 5%;
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  z-index: 12;
+  background-color: #191e26;
+  border: 2px solid white;
+}
+
+.ClassLabel div {
+  overflow-y: scroll;
+  height:100%;
+}
+
+
+
+
+
+#Label1Show img{
+  width: 90%;
+}
+
+#Label2Show img{
+  width: 90%;
+}
+
+#Label4Show img{
+  height: auto;
+}
+
+
+
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  
+
+
+}
+
+/* Clearfix (clear floats) */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
 }
