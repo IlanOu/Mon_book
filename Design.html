@@ -51,7 +51,7 @@
                 <img src="./Images/3D/Galeries Lafayettes.png">
                 <a onclick="Label2()">
                   <div class="overlay" id="vert">
-                    <div class="text">Anciennes Galeries Lafayettes Annecy<br> 24/04/2022</div>
+                    <div class="text">Anciennes Galeries Lafayette Annecy<br> 24/04/2022</div>
                   </div>
                 </a>
               </div>
@@ -307,10 +307,50 @@
         </div>
 
 
+        <div class="DerriereLabel" id="IDLabel" > </div>
 
-        <div class="ClassLabel1">
+
+        <div class="ClassLabel" id="NOPECLICK">
+          <div id="Label1Show">
+            <iframe style="width: 832px; height: 450px; margin: 2% 0; " title="Bonlieu" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9165ee5309d7418ba208e0c84d032a60/embed">
+            </iframe>
+            <img src="./Images/3D/Bonlieu.png">
+            <p>J'ai comme projet de créer un jeu avec comme carte la ville d'Annecy. Je dois modéliser tout les batiments principaux de la ville. Voici donc Bonlieu.</p>
+
+          </div>
+
+          <div id="Label2Show">
+
+            <iframe style="width: 832px; height: 450px; margin: 2% 0; " title="Galeries Lafayette" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/ec1bf235dc794736a31abce9474379ad/embed">
+            </iframe>
+
+            <img src="./Images/3D/Galeries Lafayettes.png">
+            <p>J'ai comme projet de créer un jeu avec comme carte la ville d'Annecy. Je dois modéliser tout les batiments principaux de la ville. Voici donc les anciennes Galeries Lafayette.</p>
+          </div>
+
+
+          <div id="Label3Show">
+            <iframe src="https://player.vimeo.com/video/726276610?h=fa891421a4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" style="width: 832px; height: 450px; margin: 2% 0; " frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Animation_III.mp4"></iframe>
+          </div>
+
+
+        <div id="Label4Show" class="row2" style="overflow: hidden;">
+
+          <img class="column2" style="overflow: hidden;" src="./Images/3D/Octane_Wire.jpeg">
+          <img class="column2" style="overflow: hidden;" src="./Images/3D/la_octane.png">
+          <img class="column2" style="overflow: hidden;" src="./Images/3D/la_octane_2.png">
+
 
         </div>
+
+        <div id="Label9Show">
+          <iframe style="width: 832px; height: 450px; margin: 2% 0; " title="Stormbreaker" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/a90d5ea6a240402d9dd9f56cce27ab08/embed"> </iframe>
+        </div>
+
+
+       </div>
+
+
 
 
 
@@ -318,38 +358,16 @@
 
       <div class="lightEffect"></div>
 
-      <div class="row3Col">
 
-
-        <div class="columns3" id="LinksButton">
-
-          <p style="font-size: 14px;"></p>
-          <div>
-            <footer> <small>&copy; All rights reserved</small></footer>
-          </div>
-
-        </div>
-
-        <div class="columns3" id="LinksButton" style="text-align: center; font-size:36px; position: relative; top: 96%; z-index: 5;">
-
-          <a href="https://github.com/IlanOu" target="_blank">
-            <i class="fa fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ilan-outhier/">
-            <i class="fa fa-linkedin-square" target="_blank"></i>
-          </a>
-          <br>
-
-        </div>
-
-
-      </div>
 
 
 
 
 
     <script>
+
+
+
       function show3D(){
         document.getElementById('Div3D').style.display = "block";
         document.getElementById('Div2D').style.display = "none";
@@ -363,10 +381,126 @@
         document.getElementById('Sh2D').style.color = "#ffac00";
       }
 
+
+
+
+
+
       function Label1(){
+        document.getElementById('NOPECLICK').style.display = "block";
+        document.getElementById('IDLabel').style.display = "block";
+
+        document.getElementById('Label1Show').style.display = "block";
+        document.getElementById('Label2Show').style.display = "none";
+        document.getElementById('Label3Show').style.display = "none";
+        document.getElementById('Label4Show').style.display = "none";
+
+
+        document.getElementById('Label9Show').style.display = "none";
+      }
+
+      function Label2(){
+        document.getElementById('NOPECLICK').style.display = "block";
+        document.getElementById('IDLabel').style.display = "block";
+
+        document.getElementById('Label1Show').style.display = "none";
+        document.getElementById('Label2Show').style.display = "block";
+        document.getElementById('Label3Show').style.display = "none";
+        document.getElementById('Label4Show').style.display = "none";
+
+
+        document.getElementById('Label9Show').style.display = "none";
+      }
+
+      function Label3(){
+        document.getElementById('NOPECLICK').style.display = "block";
+        document.getElementById('IDLabel').style.display = "block";
+
+        document.getElementById('Label1Show').style.display = "none";
+        document.getElementById('Label2Show').style.display = "none";
+        document.getElementById('Label3Show').style.display = "block";
+        document.getElementById('Label4Show').style.display = "none";
+
+
+        document.getElementById('Label9Show').style.display = "none";
 
       }
+
+      function Label4(){
+        document.getElementById('NOPECLICK').style.display = "block";
+        document.getElementById('IDLabel').style.display = "block";
+
+        document.getElementById('Label1Show').style.display = "none";
+        document.getElementById('Label2Show').style.display = "none";
+        document.getElementById('Label3Show').style.display = "none";
+        document.getElementById('Label4Show').style.display = "block";
+
+
+        document.getElementById('Label9Show').style.display = "none";
+      }
+
+        function Label9(){
+          document.getElementById('NOPECLICK').style.display = "block";
+          document.getElementById('IDLabel').style.display = "block";
+
+          document.getElementById('Label1Show').style.display = "none";
+          document.getElementById('Label2Show').style.display = "none";
+          document.getElementById('Label3Show').style.display = "none";
+          document.getElementById('Label4Show').style.display = "none";
+
+
+          document.getElementById('Label9Show').style.display = "block";
+
+      }
+
+
+
+
+
+      window.addEventListener('mouseup',function(event){
+         var pol = document.getElementById('NOPECLICK');
+
+        if (event.target.parentNode != pol.childNodes[1]){
+          let ElementID = event.target.parentNode.id
+          if (!ElementID.includes("Show") && !ElementID.includes("Label")){
+            if(event.target != pol && event.target.parentNode != pol){
+                pol.style.display = 'none';
+                document.getElementById('IDLabel').style.display = "none";
+            }
+          }
+        }
+       });
+
+
     </script>
 
   </body>
+  <footer>
+    <div class="row3Col">
+
+
+      <div class="columns3" id="LinksButton">
+
+        <p style="font-size: 14px;"></p>
+        <div>
+          <small>&copy; All rights reserved</small>
+        </div>
+
+      </div>
+
+      <div class="columns3" id="LinksButton" style="text-align: center; font-size:36px; position: relative; top: 96%; z-index: 5;">
+
+        <a href="https://github.com/IlanOu" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ilan-outhier/">
+          <i class="fa fa-linkedin-square" target="_blank"></i>
+        </a>
+        <br>
+
+      </div>
+
+
+    </div>
+  </footer>
 </html>
