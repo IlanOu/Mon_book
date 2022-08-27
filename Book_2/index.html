@@ -38,11 +38,21 @@
         </div>
       </div>
 
+
+
+
       <div class="divider div-transparent"></div>
+
+
+
+
 
       <h3 class="MoyenTitre">Mes projets : design 3D</h3>
 
-      <div class="row">
+      <div class="row showArrows" id="Ligne-1">
+        <div class="colonne" style="position: relative; width: 35px; height: 226px;"></div>
+
+
 
         <div class="Element colonne">
           <div class="Image"><img src="./Images/3D/Bonlieu.png" style="object-position: 50% 0;"></div>
@@ -67,12 +77,34 @@
 
 
         <div class="Element colonne">
+          <div class="Image"><img src="./Images/3D/Animation.png" style="object-position: 50% 0;"></div>
+          <div class="Titre-Image">
+            Animation
+          </div>
+          <div class="date">
+            25/02/22
+          </div>
+        </div>
+
+
+        <div class="Element colonne">
           <div class="Image"><img src="./Images/3D/la_octane.png" style="object-position: 25% 0;"></div>
           <div class="Titre-Image">
             Octane Rocket League
           </div>
           <div class="date">
             29/10/21
+          </div>
+        </div>
+
+
+        <div class="Element colonne">
+          <div class="Image"><img src="./Images/3D/assassins creed.jpg" style="object-position: 60% 0;"></div>
+          <div class="Titre-Image">
+            Scène Assassin's Creed
+          </div>
+          <div class="date">
+            02/03/21
           </div>
         </div>
 
@@ -88,6 +120,20 @@
         </div>
 
 
+        <div onclick="ImagesSwipeDroite()" class="colonne Butt"><div>></div></div>
+
+
+
+
+
+
+      </div>
+
+
+      <div class="row showArrows" id="Ligne-2">
+
+        <div onclick="ImagesSwipeGauche()" class="colonne Butt"><div><</div></div>
+
         <div class="Element colonne">
           <div class="Image"><img src="./Images/3D/sabre evee bloom bleu final.png" style="object-position: 70% 0;"></div>
           <div class="Titre-Image">
@@ -97,7 +143,6 @@
             06/01/21
           </div>
         </div>
-
 
 
         <div class="Element colonne">
@@ -123,7 +168,14 @@
 
 
 
+
       </div>
+
+
+
+
+
+
     </div>
 
 
@@ -144,6 +196,15 @@
       else {
         document.getElementById("bg").classList.remove("background-image-blur");
       }
+  }
+
+  function ImagesSwipeDroite() {
+    document.getElementById("Ligne-1").style.display = "none";
+    document.getElementById("Ligne-2").style.display = "block";
+  }
+  function ImagesSwipeGauche() {
+    document.getElementById("Ligne-2").style.display = "none";
+    document.getElementById("Ligne-1").style.display = "block";
   }
 
 
