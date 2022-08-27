@@ -131,6 +131,7 @@ body {
   float: left;
   width: 28%;
   font-size: 17px;
+
 }
 .column2 {
   float: right;
@@ -148,13 +149,21 @@ body {
 .strokeme {
     color: white;
     text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-    text-shadow: -5px 5px 1px #fa194e;
+    text-shadow: 4px 4px 0px #fa194e;
 }
 
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+
+
+#Ligne-1 {
+  display: block;
+}
+#Ligne-2 {
+  display: none;
 }
 
 
@@ -188,6 +197,37 @@ body {
   width: 16%;
   font-size: 17px;
 }
+
+
+
+
+.Butt {
+  position: relative;
+  width: 35px;
+  height: 226px;
+  opacity: 0.01;
+  transition: all 0.1s linear;
+}
+
+
+
+.Butt:hover{
+  transition: all 0.1s linear;
+  opacity: 1;
+}
+
+
+.Butt div {
+  font-size: 40px;
+  margin-top: 240%;
+  color: #8b8b8d;
+
+}
+
+.Butt:hover {
+  cursor: pointer;
+}
+
 
 
 
