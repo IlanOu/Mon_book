@@ -173,9 +173,9 @@ a:active {
 }
 
 .strokeme {
-    color: white;
-    text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-    text-shadow: 4px 4px 0px #fa194e;
+  color: white;
+  text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
+  text-shadow: 4px 4px 0px #fa194e;
 }
 
 .row:after {
@@ -186,17 +186,185 @@ a:active {
 
 
 
+/* ---- Parties ---- */
+
+.TitresParties:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
 
 
-#Ligne-1 {
+
+.TitresParties .Image {
+  float: left;
+  margin: 0 30px;
+
+
+  transition: all 0.1s linear;
+  display: block;
+  height: 92px;
+  width: 161px;
+  border-radius: 8px;
+  clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% calc(100% - 20px), 0% 20px);
+
+}
+
+.TitresParties .Image div b{
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
+}
+
+.TitresParties .Image div{
+  box-shadow: inset -2px 2px 5px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+
+/* --------- 3D --------- */
+
+.TitresParties #Titre3DPart div:hover{
+  transition: all 0.1s linear;
+  cursor: pointer;
+  background-color: rgba(199, 37, 49, 0.38);
+}
+
+
+.TitresParties #Titre3DPart div{
+  transition: all 0.1s linear;
+  background-color: rgba(199, 37, 49, 0.3);
+  height: 92px;
+  width: 161px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+/* --------- Dessin --------- */
+
+.TitresParties #TitreDessinPart div:hover{
+  transition: all 0.1s linear;
+  cursor: pointer;
+  background-color: rgba(250, 119, 50, 0.38);
+}
+
+
+.TitresParties #TitreDessinPart div{
+  transition: all 0.1s linear;
+  background-color: rgba(250, 119, 50, 0.3);
+  height: 92px;
+  width: 161px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+/* --------- Python --------- */
+
+.TitresParties #TitrePythonPart div:hover{
+  transition: all 0.1s linear;
+  cursor: pointer;
+  background-color: rgba(65, 36, 163, 0.38);
+}
+
+
+.TitresParties #TitrePythonPart div{
+  transition: all 0.1s linear;
+  background-color: rgba(65, 36, 163, 0.3);
+  height: 92px;
+  width: 161px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+/* --------- HtmlCss --------- */
+
+.TitresParties #TitreHtmlCssPart div:hover{
+  transition: all 0.1s linear;
+  cursor: pointer;
+  background-color: rgba(57, 121, 231, 0.38);
+}
+
+
+.TitresParties #TitreHtmlCssPart div{
+  transition: all 0.1s linear;
+  background-color: rgba(57, 121, 231, 0.3);
+  height: 92px;
+  width: 161px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+/* --------- C# --------- */
+
+.TitresParties #TitreCsPart div:hover{
+  transition: all 0.1s linear;
+  cursor: pointer;
+  background-color: rgba(128, 192, 238, 0.38);
+}
+
+
+.TitresParties #TitreCsPart div{
+  transition: all 0.1s linear;
+  background-color: rgba(128, 192, 238, 0.3);
+  height: 92px;
+  width: 161px;
+  object-fit: cover;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+
+
+#CodePythonPart {
   display: block;
 }
-#Ligne-2 {
+#CodeHtmlPart {
+  display: none;
+}
+#CodeCsPart {
+  display: none;
+}
+#Design3DPart {
+  display: none;
+}
+#Design2DPart {
   display: none;
 }
 
 
-.Image {
+/* --------------------------- Design : 3D Part --------------------------- */
+
+#Design3DPart {
+  display: none;
+}
+
+#Design3DPart #Ligne-1 {
+  display: block;
+}
+#Design3DPart #Ligne-2 {
+  display: none;
+}
+
+
+#Design3DPart .Image {
   transition: all 0.1s linear;
   display:block;
   height: 226px;
@@ -209,7 +377,7 @@ a:active {
   clip-path: polygon(20px 0%, calc(100% - 20px) 0%, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0% calc(100% - 20px), 0% 20px);
 }
 
-.Image img{
+#Design3DPart .Image img{
 
   height: 226px;
   width: 161px;
@@ -221,7 +389,7 @@ a:active {
 
 
 
-.colonne {
+#Design3DPart .colonne {
   float: left;
   width: 16%;
   font-size: 17px;
@@ -231,7 +399,7 @@ a:active {
 
 
 
-.Butt {
+#Design3DPart .Butt {
   position: relative;
   width: 35px;
   height: 226px;
@@ -241,26 +409,26 @@ a:active {
 
 
 
-.Butt:hover{
+#Design3DPart .Butt:hover{
   transition: all 0.1s linear;
   opacity: 1;
 }
 
 
-.Butt div {
+#Design3DPart .Butt div {
   font-size: 40px;
   margin-top: 240%;
   color: #8b8b8d;
 
 }
 
-.Butt:hover {
+#Design3DPart .Butt:hover {
   cursor: pointer;
 }
 
 
 
-.Element {
+#Design3DPart .Element {
   height: 226px;
   width: 161px;
   position: relative;
@@ -270,7 +438,7 @@ a:active {
 }
 
 
-.Titre-Image {
+#Design3DPart .Titre-Image {
   pointer-events: none;
   transition: all 0.1s linear;
   position: absolute;
@@ -285,14 +453,14 @@ a:active {
 
 }
 
-.Image:hover + .Titre-Image{
+#Design3DPart .Image:hover + .Titre-Image{
   transition: all 0.1s linear;
   visibility: visible;
   opacity: 1;
 }
 
 
-.Image:hover {
+#Design3DPart .Image:hover {
   transition: all 0.1s linear;
   filter: blur(1px) brightness(90%);
   border-radius: 5%;
@@ -300,7 +468,7 @@ a:active {
   cursor: pointer;
 }
 
-.date {
+#Design3DPart .date {
   pointer-events: none;
   position: absolute;
   top: 89%;
@@ -316,7 +484,7 @@ a:active {
 }
 
 
-.Image-Fond {
+#Design3DPart .Image-Fond {
   position: relative;
   width: 1160px;
   height: 426px;
@@ -328,17 +496,12 @@ a:active {
 }
 
 
-.colonne-Image {
+#Design3DPart .colonne-Image {
 
   float: left;
   width: 40%;
   margin-left: 40px;
   margin-top: 40px;
-
-}
-
-
-.colonne-image img:hover {
 
 }
 
