@@ -36,6 +36,31 @@ body {
 }
 
 
+
+a:link {
+  color: white;
+
+}
+
+a:visited {
+  color: white;
+
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
 .background-image {
   position: fixed;
   left: 0;
@@ -235,9 +260,6 @@ body {
 
 
 
-
-
-
 .Element {
   height: 226px;
   width: 161px;
@@ -314,6 +336,12 @@ body {
   margin-top: 40px;
 
 }
+
+
+.colonne-image img:hover {
+
+}
+
 
 .Octane {
   background-image: url('./Images/3D/la_octane.png');
