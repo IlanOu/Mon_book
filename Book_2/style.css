@@ -130,7 +130,8 @@ a:active {
 
 
 .GrandTitre {
-  margin-top: 4%;
+  margin-top: 5%;
+
   text-align: left;
   font-size: 48px;
   font-family: 'Montserrat';
@@ -146,6 +147,7 @@ a:active {
   font-weight: 700;
   line-height: 38px;
   text-transform: uppercase;
+  margin-bottom: 5%;
 }
 
 
@@ -157,6 +159,7 @@ a:active {
   float: left;
   width: 28%;
   font-size: 17px;
+  margin-bottom: 6%;
 
 }
 .column2 {
@@ -175,7 +178,7 @@ a:active {
 .strokeme {
   color: white;
   text-shadow: -1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;
-  text-shadow: 4px 4px 0px #fa194e;
+  text-shadow: 3px 3px 0px #fa194e;
 }
 
 .row:after {
@@ -518,4 +521,172 @@ a:active {
 .Octane:hover{
   transition: all 0.2s linear;
   background-image: url("./Images/3D/Octane_wire.jpeg")
+}
+
+
+
+
+/* --------------------------- Code : Python Part --------------------------- */
+
+#CodePythonPart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#CodePythonPart .date {
+  width: auto;
+  padding: 2px 4px;
+  background-color: #b753df;
+  position: absolute;
+  left: 80%;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px ;
+}
+
+#CodePythonPart .ContCode {
+  position: relative;
+  margin: 1%;
+  float: left;
+  width: 30%;
+  border-radius: 10px;
+
+  /*background: rgb(31,31,31);*/
+  background: linear-gradient(0deg, rgba(27,27,27,0) 20%, rgba(183,81,225,0.5) 100%);
+  overflow: hidden;
+  min-height: 300px;
+  max-height: 310px;
+
+}
+
+#CodePythonPart .TextOnBg {
+  margin: 15px;
+  font-size: 15px;
+  font: 'Newake';
+}
+
+#CodePythonPart .ImgContTop {
+  height: 15%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 5px #b751e1;
+
+}
+
+
+/* --------------------------- Code : HTML Part --------------------------- */
+
+#CodeHtmlPart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#CodeHtmlPart .date {
+  width: auto;
+  padding: 2px 4px;
+  background-color: #599de6;
+  position: absolute;
+  left: 80%;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px ;
+}
+
+#CodeHtmlPart .ContCode {
+  position: relative;
+  margin: 1%;
+  float: left;
+  width: 30%;
+  border-radius: 10px;
+
+  /*background: rgb(31,31,31);*/
+  background: linear-gradient(0deg, rgba(27,27,27,0) 20%, rgba(89, 157, 230,0.5) 100%);
+  overflow: hidden;
+  min-height: 300px;
+  max-height: 310px;
+
+}
+
+#CodeHtmlPart .TextOnBg {
+  margin: 15px;
+  font-size: 15px;
+  font: 'Newake';
+}
+
+#CodeHtmlPart .ImgContTop {
+  height: 15%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 5px #599de6;
+  transition: all 0.05s linear;
+
+}
+
+#CodeHtmlPart .ImgContTop:hover {
+  transition: all 0.05s linear;
+  height: 40%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 5px #599de6;
+
+}
+
+
+
+/* --------------------------- Code : C# Part --------------------------- */
+
+#CodeCsPart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#CodeCsPart .date {
+  width: auto;
+  padding: 2px 4px;
+  background-color: #17adc6;
+  position: absolute;
+  left: 80%;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px ;
+}
+
+#CodeCsPart .ContCode {
+  position: relative;
+  margin: 1%;
+  float: left;
+  width: 30%;
+  border-radius: 10px;
+
+  /*background: rgb(31,31,31);*/
+  background: linear-gradient(0deg, rgba(27,27,27,0) 20%, rgba(23, 173, 198,0.5) 100%);
+  overflow: hidden;
+  min-height: 300px;
+  max-height: 310px;
+
+}
+
+#CodeCsPart .TextOnBg {
+  margin: 15px;
+  font-size: 15px;
+  font: 'Newake';
+}
+
+#CodeCsPart .ImgContTop {
+  height: 15%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 5px #17adc6;
+
 }
