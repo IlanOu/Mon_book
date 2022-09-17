@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <title>Ilan Outhier - 3D </title>
+  <meta charset="UTF-8">
+  <head>
+      <meta content='width=device-width, initial-scale=1' name='viewport'/>
+      <link rel="stylesheet" type="text/css" href="Book_Style.css" />
+      <link rel="icon" href="imgs/irregular_quadrilateral_48px.png" type="image/png">
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="FondSimple">
+
+      <a href="index.html" class="previous">&laquo;</a>
+
+      <form class="presentation-3D">
+        <p style="color:white; text-align:center; vertical-align: middle;">
+          Mes meilleures créations 3D :
+        </p>
+
+      </form>
+
+
+      </div>
+
+
+
+          <!-- Container for the image gallery -->
+    <div class="container2">
+
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="Book_dessins/oculus rift.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="Book_dessins/sabre evee bloom bleu final.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="Book_dessins/Iron man Holo.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="Book_dessins/la_octane.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="Book_dessins/la_octane_2.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="Book_dessins/assassins creed.jpg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="Book_dessins/oculus rift.png" style="width:40%" onclick="currentSlide(1)" alt="Casque de réalité virtuelle - Réalisé sur blender">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Book_dessins/sabre evee bloom bleu final.png" style="width:40%" onclick="currentSlide(2)" alt="Sabre - Réalisé sur blender">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Book_dessins/Iron man Holo.png" style="width:40%" onclick="currentSlide(3)" alt="Iron Man Hologramme - Réalisé sur blender à partir de l'import du personnage sans texture">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Book_dessins/la_octane.png" style="width:40%" onclick="currentSlide(4)" alt="Octane Rocket League - Réalisé sur blender à partir d'une image">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Book_dessins/la_octane_2.png" style="width:40%" onclick="currentSlide(5)" alt="Octane Rocket League - Réalisé sur blender à partir d'une image">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Book_dessins/assassins creed.jpg" style="width:40%" onclick="currentSlide(6)" alt="Assassin's Creed Scene - Réalisé sur blender avec l'import de l'image de fond">
+        </div>
+      </div>
+
+      <a href="Code.html" class="Pages">Code</a>
+      <a href="Dessin.html" class="Pages">Dessin</a>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+      /* doit être à la fin */
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
