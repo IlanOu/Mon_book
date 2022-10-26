@@ -12,7 +12,8 @@
     <div class="wrapper">
 
       <h1 class="GrandTitre">Portfolio</h1>
-      <h3 class="MoyenTitre">Développeur, designer, autodidacte</h3>
+      <h3 class="MoyenTitre" style="margin-bottom: 0;">Développeur, designer, autodidacte</h3>
+      <h4 class="PetitTitre">Etudiant à l'école CCI Gobelins Annecy</h4>
 
 
       <div class="row">
@@ -24,7 +25,7 @@
             <br>
             Je m'appelle Ilan Outhier, j'ai dix-sept ans et je suis un étudiant en développement web à l'école Gobelin à Annecy.
             <br><br>
-            Les projets que vous trouverez dans ce portfolio sont des projets personnels qui m'ont permis d'acquérir différentes compétences en HTML/CSS/JS/C#/python.
+            Les projets que vous trouverez dans ce portfolio sont en grande partie des projets personnels qui m'ont permis d'acquérir différentes compétences en HTML, CSS, JS, C# et python.
             <br><br>
             J'ai un côté artistique et créatif que j'exprime en programmation ainsi que dans mes projets de design 2D et 3D.
 
@@ -48,7 +49,7 @@
       <div class="TitresParties">
         <div class="Image" id="TitrePythonPart" onclick="ShowMe(CodePythonPart)">
           <div>
-            <b>Python</b>
+            <b>Algo</b>
           </div>
         </div>
 
@@ -87,14 +88,98 @@
       <div id="ElPapa">
         <div id="CodePythonPart">
 
-          <h3 class="MoyenTitre">Mes projets : Python</h3>
+          <h3 class="MoyenTitre">Mes projets : Algorithme</h3>
+
+          <h4 class="PetitTitre" style="text-decoration: underline;">
+            Projets réalisés en cours :
+          </h4>
+
+          <div class="khanacademy">
+            <h2>Pathfinder</h2>
+            <div class="AlignItems">
+              
+              <p>
+                Nous avons créé en cours d'algorithme un programme capable de trouver tout seul un chemin vers une cible.<br><br>
+                Le bot se créé des murs quand il ne peut plus avancer ou quand il revient sur ses pas. Cela lui permet d'éviter de refaire les mêmes erreurs.
+                <br>
+                <br>
+                <a href="https://fr.khanacademy.org/computer-programming/ilan-fonctionnel-mais-juste-un-peu-limit-au-niveau-du-qi-correctionpathfinding_livecoding/6612811972657152" target="_blank"> → Lien vers le programme</a>
+              </p>
+              <iframe src="https://fr.khanacademy.org/computer-programming/ilan-fonctionnel-mais-juste-un-peu-limit-au-niveau-du-qi-correctionpathfinding_livecoding/6612811972657152/embedded?id=1666782653347-0.9044457756223487&amp;origin=file%3A%2F%2F&amp;editor=no&amp;buttons=no&amp;author=yes&amp;embed=yes" frameborder="0" scrolling="no"></iframe>
+              <p>
+                Appuyez sur une touche dans le cadre pour lancer le programme (restez appuyé pour voir chaque frames)
+                <br><br> 
+                Si l'iframe de fonctionne pas, actualisez la page
+              </p>
+
+            </div>
+            Réalisé en octobre 2022
+            <br><br>
+          </div>
+
+          <div class="khanacademy">
+            <h2>Paint</h2>
+            <div class="AlignItems">
+              
+              <p>
+                Nous avons vu comment faire un Paint avec plusieurs couleurs et plusieurs pinceaux.
+                
+                <br>
+                <br>
+                <a href="https://fr.khanacademy.org/computer-programming/ilans-paint-brush/4560212490502144" target="_blank"> → Lien vers le programme</a>
+              </p>
+              <iframe src="https://fr.khanacademy.org/computer-programming/ilans-paint-brush/4560212490502144/embedded?id=1666785571477-0.09396894461636962&amp;origin=file%3A%2F%2F&amp;editor=no&amp;buttons=no&amp;author=yes&amp;embed=yes" frameborder="0" scrolling="no"></iframe>
+              
+              <p>
+                Sélectionnez un pinceau dans la palette en à gauche puis une couleur pour poser dessiner.
+                <br><br> 
+                Si l'iframe de fonctionne pas, actualisez la page
+              </p>
+
+            </div>
+            réalisé en octobre 2022
+            <br><br>
+          </div>  
+
+          <div class="khanacademy">
+            <h2>Mini-éditeur de carte de RPG</h2>
+            <div class="AlignItems">
+              
+              <p>
+                Pour réaliser cet éditeur de carte, on a dû utiliser nos connaissances acquises grâce au Paint et au Pathfinding. On a utilisé la grille du Pathfinding et les différents pinceaux du Paint. 
+                <br>
+                <br>
+                <a href="https://fr.khanacademy.org/computer-programming/ilans-paint-brush/4560212490502144" target="_blank"> → Lien vers le programme</a>
+              </p>
+              <iframe src="https://fr.khanacademy.org/computer-programming/rpg-maker/5019103909167104/embedded?id=1666782958717-0.7078008523102193&amp;origin=file%3A%2F%2F&amp;editor=no&amp;buttons=no&amp;author=yes&amp;embed=yes" frameborder="0" scrolling="no"></iframe>
+              
+              <p>
+                Sélectionnez un bloc dans la palette d'outils en haut pour poser des blocs.
+                <br><br> 
+                Si l'iframe de fonctionne pas, actualisez la page
+              </p>
+
+            </div>
+            réalisé en octobre 2022
+            <br><br>
+          </div>
+
+
+          <h4 class="unselectable"style="opacity: 0; pointer-events: none;">______________</h4>
+          <h4 class="PetitTitre" style="text-decoration: underline;">
+            Projets réalisés chez moi :
+          </h4>      
+
+
+
+
 
           <div class="ContCode">
             <div class="date">24/08/22</div>
             <div class="ImgContTop" style="background-image: url('./Images/Python/Reveil.png');"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Réveil</b>
+                <b>Réveil (Python)</b>
                 <br><br>
                 Tout les matins, ce programme me réveil avec l'heure, la météo, une blague et de la musique.
               </div>
@@ -106,9 +191,9 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/HomeChatDisc.png');"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Bot Home Chat</b>
+                <b>Bot Home Chat (Python)</b>
                 <br><br>
-                Ce programme est lié avec un autre programme fait en php que vous trouverez dans la partie HTML. C'est un bot qui réagit à des commandes.
+                Ce programme est un bot qui réagit à des commandes. Il est lié avec un projet php dans la partie HTML.
               </div>
             </div>
           </div>
@@ -118,7 +203,7 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/synchronize.jpg');"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Synchronizer</b>
+                <b>Synchronizer (Python)</b>
                 <br><br>
                 Ce code sauvegarde vos fichiers important sur un autre disque dur. Plus moyen les perdre maintenant !
               </div>
@@ -131,7 +216,7 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/Bloc Note.jpg'); background-position: top;"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Bloc Note</b>
+                <b>Bloc Note (Python)</b>
                 <br><br>
                 Un simple bloc note avec système de sauvegarde.
               </div>
@@ -143,7 +228,7 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/Chat Local Icon Petit.jpg'); background-position: left;"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Chat Local</b>
+                <b>Chat Local (Python)</b>
                 <br><br>
                 J'ai fait ce programme pour qu'avec ma classe en terminale on puisse discuter sans faire de bruit.
               </div>
@@ -155,7 +240,7 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/Intranet Icon.jpg');"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Intranet</b>
+                <b>Intranet (Python)</b>
                 <br><br>
                 J'ai crée un internet local qui permet d'ouvrir des fichiers html depuis mon PC.
               </div>
@@ -168,7 +253,7 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/Macumba Bot.png'); background-position: top;"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Macumba Bot</b>
+                <b>Macumba Bot (Python)</b>
                 <br><br>
                 Un ami m'a demandé de créer un bot Discord qui fait la maintenance de son serveur.
               </div>
@@ -180,7 +265,7 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/sorter.png');"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Trieur</b>
+                <b>Trieur (Python)</b>
                 <br><br>
                 Mon dossier Téléchargements est souvent plein et pas rangé. Ce programme me permet de trier ses fichiers dans mes dossiers par extension.
               </div>
@@ -192,18 +277,44 @@
             <div class="ImgContTop" style="background-image: url('./Images/Python/Spotipy.jpg'); background-position: top;"></div>
             <div class="BgGradientCont">
               <div class="TextOnBg">
-                <b>Spotify Data</b>
+                <b>Spotify Data (Python)</b>
                 <br><br>
                 J'ai fait ce programme pour connaître les informations de la musiques que j'écoute en direct. Je peux aussi avoir des musiques et artistes similaires.
               </div>
             </div>
           </div>
-
         </div>
 
         <div id="CodeHtmlPart">
 
           <h3 class="MoyenTitre">Mes projets : Html, Css, JavaScript</h3>
+
+          <div class="ContCode">
+            <div class="date">21/10/22</div>
+            <div class="Cours">Fait en cours</div>
+            <div class="ImgContTop" style="background-image: url('./Images/Html/StreamSwitch.png'); background-position: top;"></div>
+            <div class="BgGradientCont">
+              <div class="TextOnBg">
+                <a href="https://ilanou.github.io/book/workshop/" target="_blank"><b>Workshop</b></a>
+                <br><br>
+                J'ai travaillé avec des designers pour créer un double site (en cliquant sur le logo le style de la page change) 
+              </div>
+            </div>
+          </div>
+
+          <div class="ContCode">
+            <div class="date">30/09/22</div>
+            <div class="Cours">Fait en cours</div>
+            <div class="ImgContTop" style="background-image: url('./Images/Html/Recette.png'); background-position: top;"></div>
+            <div class="BgGradientCont">
+              <div class="TextOnBg">
+                <a href="https://ilanou.github.io/recette/" target="_blank"><b>Exercice Html/CSS</b></a>
+                <br><br>
+                Exercice fait en cours
+              </div>
+            </div>
+          </div>
+
 
           <div class="ContCode">
             <div class="date">28/06/22</div>
@@ -216,6 +327,7 @@
               </div>
             </div>
           </div>
+
 
           <div class="ContCode">
             <div class="date">12/06/22</div>
@@ -621,14 +733,89 @@
           </div>
         </div>
 
-        <div id="Design2DPart">
+        <div id="Design2DPart" class="Design2DPart">
 
           <h3 class="MoyenTitre">Mes projets : Dessins</h3>
 
+          
+          
+          <div class="ItemsDessins">
+            <div class="ImageDessinPadre">
+
+              <div class="ClassDImage">
+                <img class="ImageDessin" src='./Images/2D/Wallpaper hexagon basique.png' onclick="ImagesDessin(this);">
+                <div class="date">
+                  10/01/21
+                </div>
+                <div class="Titre-Image">
+                  Fond d'écran
+                </div>
+
+              </div>
 
 
 
-        </div>
+              <div class="ClassDImage">
+                <img class="ImageDessin" src='./Images/2D/Naruto Uzumaki.png' onclick="ImagesDessin(this);">
+                <div class="date">
+                  29/08/20
+                </div>
+                <div class="Titre-Image">
+                  Naruto Uzumaki
+                </div>
+              </div>
+
+              <div class="ClassDImage">
+                <img class="ImageDessin" src='./Images/2D/Mirio Togata.png' onclick="ImagesDessin(this);">
+                <div class="date">
+                  06/06/20
+                </div>
+                <div class="Titre-Image">
+                  Mirio Togata
+                </div>
+              </div>             
+
+            </div>
+
+            <div class="ImageDessinPadre">
+
+              <div class="ClassDImage">
+                <img class="ImageDessin" src='./Images/2D/Tour apres.png' onclick="ImagesDessin(this);">
+                <div class="date">
+                  21/03/20
+                </div>
+                <div class="Titre-Image">
+                  Fond d'écran
+                </div>
+              </div>    
+              
+              <div class="ClassDImage">
+                <img class="ImageDessin" src='./Images/2D/Izuku Midoriya.png' onclick="ImagesDessin(this);">
+                <div class="date">
+                  29/06/20
+                </div>
+                <div class="Titre-Image">
+                  Izuku Midoriya
+                </div>
+              </div>  
+              
+            </div>
+
+
+
+            <div class="ImagePreview" id="ex1-layer">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+              <img id="expandedImg" style="width:100%">
+              <div id="imgtext"></div>
+            </div>
+          </div>
+          
+
+
+
+          </div>
+
+
       </div>
 
 
@@ -644,6 +831,50 @@
 
 
   <script>
+
+    // ========= MOUSE FOLLOW =========
+
+    let constrain = 1500;
+    let mouseOverContainer = document.getElementById("body");
+    let ex1Layer = document.getElementById("ex1-layer");
+
+    function transforms(x, y, el) {
+      let box = el.getBoundingClientRect();
+      let calcX = -(y - box.y - (box.height / 2)) / constrain;
+      let calcY = (x - box.x - (box.width / 2)) / constrain;
+      
+      return "perspective(100px) "
+        + "   rotateX("+ calcX +"deg) "
+        + "   rotateY("+ calcY +"deg) ";
+    };
+
+     function transformElement(el, xyEl) {
+      el.style.transform  = transforms.apply(null, xyEl);
+    }
+
+    mouseOverContainer.onmousemove = function(e) {
+      let xy = [e.clientX, e.clientY];
+      let position = xy.concat([ex1Layer]);
+
+      window.requestAnimationFrame(function(){
+        transformElement(ex1Layer, position);
+      });
+    };
+
+    // ================================
+
+
+
+
+
+
+    function ImagesDessin(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
 
 
     function AfficheFond(Objet) {
@@ -691,13 +922,5 @@
       }
       Moi.style.display = "block";
     }
-
-
-
-
   </script>
-
 </html>
-
-
-<!-- Polyvalent - Impliqué - Organisé - Force de proposition - Motivé - Ambitieux - Résilient - Consciencieux - Dynamique - Méthodique - Passionné - Créatif - Réfléchi - Polyvalent - Impliqué - Organisé - Force de proposition - Motivé - Ambitieux - Résilient - Consciencieux - Dynamique - Méthodique - Passionné - Créatif - Réfléchi -->
