@@ -1,0 +1,620 @@
+/* =========== Fonts =========== */
+
+@font-face{
+	font-family: "Montserrat";
+	src: url("./Fonts/Montserrat-Regular.ttf");
+}
+@font-face{
+	font-family: "MontserratBold";
+	src: url("./Fonts/Montserrat-Bold.ttf");
+}
+
+
+/* =========== Page Style =========== */
+
+* {
+  scroll-behavior: smooth;
+	font-family: "Montserrat";
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color:  #fff;
+}
+
+body {
+	display:  block;
+	text-align: center;
+	min-height: 50vh;
+  background:  linear-gradient(#353540,#252530, #353540);
+  overflow-x: hidden;
+}
+
+
+/* =========== Accueil =========== */
+
+@keyframes OnSpawn {
+  from {
+    top: -100vh;
+  }
+  
+}
+
+#divAccueil {
+  z-index: 0;
+  top: 0vh;
+  left:  0;
+  position:  relative;
+  animation: OnSpawn 2s;
+  animation-timing-function: cubic-bezier(.78,.07,.42,1.27);
+}
+
+#divAccueil2 {
+  top: 0vh;
+  left:  0;
+  z-index: 0;
+  position:  relative;
+  animation-timing-function: cubic-bezier(.78,.07,.42,1.27);
+  animation: OnSpawn 1.8s;
+  
+}
+
+#divAccueil3 {
+  z-index: 0;
+  left:  0;
+  top: 0vh;
+  position:  relative;
+  animation: OnSpawn 2.5s;
+  animation-timing-function: cubic-bezier(.86,.36,.59,1.05);
+}
+
+.ImageDescriptionAccueil {
+
+  position: relative;
+
+  top:  0;
+  left: 0;
+
+  height: 200px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 20px;
+
+  transform-origin: center;
+
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  /*border: solid 3px rgba(150, 150, 150, 1);*/
+
+
+
+  transform: rotateY(20deg) rotateX(-10deg) rotateZ(5deg) translateX(-50%);
+}
+
+.ImageDescriptionAccueil:hover{
+  transition: all 0.25s ease-in-out;
+
+  cursor: pointer;
+  filter: brightness(150%);
+  /*z-index: 2;*/
+  transform: rotateY(20deg) rotateX(-10deg) rotateZ(0deg) translateX(-70%) translateY(-15%);
+}
+
+
+.titresAccueil {
+  color: white;
+}
+
+.PapaImage {
+  width: 0%;
+}
+
+
+.PAPAccueil {
+
+  border-radius: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.2);
+  background-color: #383845;
+
+  position: relative;
+  display: flex;
+
+  justify-content: space-around;
+
+  padding: 5% 20%;
+
+  flex-direction: row;
+
+  height: fit-content;
+  width: 100%;
+
+
+}
+
+#LienAdobe:hover .PAPAccueil {
+  padding: 5% 15%;
+  background-color: #404050;
+}
+
+#LienAdobe:hover .Promo{
+  transform: translateY(-1000%) translateX(53%);
+}
+
+#LienOffice:hover .PAPAccueil {
+  padding: 5% 15%;
+  background-color: #404050;
+}
+
+#LienOffice:hover .Promo{
+  transform: translateY(-1000%) translateX(53%);
+}
+
+
+
+
+a:link{
+  text-decoration: none;
+}
+
+.Promo {
+  z-index: -1;
+  position: relative;
+  transform: translateY(-1000%) translateX(0%);
+}
+
+
+.PromoEnfant {
+  padding: 2%;
+  border-radius: 10px;
+  background-color: #ff5400;
+}
+
+
+@media screen and (max-width: 760px) {
+  .ImageDescriptionAccueil {
+    position: relative;
+
+    top:  0;
+    left: 0;
+
+    height: 100px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 20px;
+
+    transform-origin: center;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    /*border: solid 3px rgba(150, 150, 150, 1);*/
+
+
+
+    transform: rotateY(20deg) rotateX(-10deg) rotateZ(5deg) translateX(-50%);
+  }
+
+  .Promo {
+    z-index: -1;
+    position: relative;
+    transform: translateY(-500%) translateX(0%);
+    
+  }
+
+  #LienAdobe:hover .Promo{
+    transform: translateY(-500%) translateX(55%);
+  }
+  #LienOffice:hover .Promo{
+    transform: translateY(-500%) translateX(55%);
+  }
+
+}
+
+
+.buttonIncription {
+  border-radius: 10px;
+  padding: 3%;
+  background-color: #ff5400;
+}
+
+.buttonIncription:hover {
+  transition: 0.25s;
+  background-color: #ff8010;
+}
+
+/* =========== Page =========== */
+
+@keyframes OnSpawnPage {
+  from {
+    opacity: 0%;
+  }
+  
+}
+
+#divPage {
+  opacity: 100%;
+  animation: OnSpawnPage 2s;
+}
+
+#divPagePub {
+  display: none;
+  opacity: 100%;
+  animation: OnSpawnPage 3s;
+  animation-timing-function: cubic-bezier(.86,.36,.59,1.05);
+}
+
+#Office {
+  opacity: 100%;
+  animation: OnSpawnPage 2s;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+
+/* =========== Header =========== */
+
+.BandeauTop {
+  display: flex;
+  justify-content: space-between;
+
+	background: #383845;
+	padding: 2vh;
+	box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* =========== Header Title =========== */
+
+h1
+{
+  color:  #ff5400;
+  justify-self: center;
+	font-family: "MontserratBold";
+	display: block;
+}
+
+h3
+{
+  color:  #ff5400;
+}
+
+
+
+/* =========== Header Buttons =========== */
+
+
+
+#retour:link{
+  text-decoration: none;
+}
+
+#connection{
+  width: 3vw;
+}
+
+#connection:link{
+  text-decoration: none;
+}
+
+/* =========== Softwares Description =========== */
+
+.DivRounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bolder;
+  font-size: 2vw;
+
+  background: #424250;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+
+  left: 0;
+
+  width: 3vw;
+  height: 3vw;
+
+}
+
+.DivContour {
+  max-width: 75%;
+
+	margin-top: 5%;
+	padding:  2%;
+
+	background: #383845;
+	box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.2);
+	
+  height: auto;
+  border-radius: 30px;
+}
+
+.Description {
+  padding: 5vw;
+}
+
+.Description h3 {
+  color:  #ff8010
+}
+
+.ImageDescription {
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 20vw;
+  height: 100%;
+
+  border-radius: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.2);
+  filter: brightness(110%);
+}
+
+/* =========== Cards Container =========== */
+
+.l-container {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+
+  width: 60vw;
+  max-width: 1200px;
+  padding: 30px;
+  height: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .l-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========== Cards Effects =========== */
+
+.b-game-card {
+
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  padding-bottom: 150%;
+  font-size: 80%;
+  perspective: 1000px;
+}
+.b-game-card__cover {
+  font-size: 80%;
+
+  border-radius: 5px;
+
+	filter: saturate(130%) brightness(110%);
+
+  position: absolute;
+
+  z-index: 1;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  background-image: linear-gradient(120deg, red 0%, red 100%);
+  background-size: cover;
+
+  perspective-origin: 50% 50%;
+
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  transform: skewX(0.01deg);
+  transition: all 0.35s ease-in-out;
+
+  color:  rgba(255, 255, 255, 0);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  padding-bottom: 1vh;
+}
+
+.b-game-card__cover:hover{
+  filter: saturate(175%) brightness(110%);
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	padding-bottom: 1vh;
+	color:  rgba(255, 255, 255, 1);
+
+}
+
+.b-game-card__cover::after {
+  display: block;
+
+  content: '';
+
+  position: absolute;
+
+  z-index: 100;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+
+  background: linear-gradient(210deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.25) 20%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0) 45%);
+  transform: translateY(-25%);
+  /*will-change: transform;*/
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+
+
+.b-game-card:hover .b-game-card__cover {
+  transform: rotateX(10deg) translateY(-6px);
+  cursor: pointer;
+}
+.b-game-card:hover .b-game-card__cover::after {
+  transform: translateY(0%);
+}
+.b-game-card::before {
+  display: block;
+
+  content: '';
+
+  position: absolute;
+
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+
+  background: rgba(0, 0, 0, 1);
+  box-shadow: 0 6px 1vw 1vw rgba(0, 0, 0, 0.3);
+  /*background-image: url(https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_3.jpg);;
+  */
+
+  transform-origin: top center;
+  transform: skewX(0.01deg);
+  transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.b-game-card::after{
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+}
+
+.b-game-card:hover::before {
+  opacity: 0.6;
+
+}
+/* =========== Proposition Logiciel =========== */
+
+.Proposition {
+  margin: 0% 5%;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.25s linear;
+}
+
+.Proposition .InputProp {
+  opacity: 0;
+  transition: all 0.25s linear;
+
+}
+
+
+.PropositionLogiciel {
+  
+  padding: 2% 20%;
+}
+
+.PropositionLogiciel:hover .Proposition {
+  height: 80px;
+}
+
+.PropositionLogiciel:hover .Proposition .InputProp{
+
+  opacity: 100%;
+}
+
+.InputProp[type="text"]{
+  padding: 2%;
+  margin: 5% 5%;
+}
+
+
+
+
+/* =========== Login Page =========== */
+
+.Formulaire{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+  justify-items: center;
+
+}
+
+.Formulaire h3 {
+  text-decoration: underline;
+  font-size: bold;
+  margin: 1vh 0;
+  color: #ff8010;
+}
+
+.registerPart {
+  max-width: 800px;
+  padding: 5vw;
+  width: 100%;
+  margin-bottom: 8vh;
+}
+
+.seConnect {
+  border: solid 2px #ffaa30;;
+  padding: 2%;
+  font-size: 15px;
+}
+
+.seConnect:hover {
+  border: solid 2px #ff5400;
+}
+
+legend h2 {
+  color: #ff8010
+}
+
+select {
+  background-color: #424250;
+  border: solid 2px #000;
+  border-radius: 10px;
+}
+
+fieldset {
+  border-color: #ffaa30;
+  padding: 5%;
+  border-radius: 30px;
+}
+
+input {
+  color: black;
+  border-radius: 10px;
+  border: solid 1px white;
+}
+
+input:hover {
+  cursor: text;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  color:  #fff;
+  border: solid 2px #ff5400;
+}
+
+input[type="reset"] {
+  cursor: pointer;
+  color:  #fff;
+  border: solid 2px #ff8010;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inscription</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./styleLogiciels.css">
+</head>
+<body>
+	<div class="BandeauTop" id="divAccueil3">
+		<a href="index.html" id="retour" class="DivRounded">
+			◂
+		</a>
+		<a href="PageAccueil.html">
+			<h1>
+				InThePocket
+			</h1>
+		</a>
+		<a>
+
+		</a>
+		
+		
+	</div>
+
+	<div class="center">
+		<div class="DivContour registerPart"  id="divAccueil2">
+
+			<form name="formulaire">
+				<fieldset>
+					<legend><h2>S'identifier</h2></legend>
+
+					<div class="Formulaire">
+
+						<h3>Identité :</h3>
+						<br>
+						<label for="name_input">Nom : </label>
+						<input type="text" id="name_input" name="Nom" placeholder="Nom" required>
+
+						<label for="firstname_input">Prénom : </label>
+						<input type="text" id="firstname_input" name="Prenom" placeholder="Prénom" required>
+					
+
+
+						<label for="start">Date de naissance : </label>
+						<input type="date" id="start" name="trip-start"
+						       value="2000-07-22"
+						       min="1950-01-01" max="2010-12-31" required>
+
+
+
+
+						<h3>Adresse :</h3>
+						<br>
+
+						<label for="Ville_input">Ville : </label>
+						<input type="text" id="Ville_input" name="Ville" placeholder="Ville" required>
+
+	
+						<label for="Code_input">Code Postale : </label>
+						<input type="tel" pattern="[0-9]{5}"  id="Code_input" name="Code" placeholder="00000" required>
+
+
+
+						<h3>Contact :</h3>
+						<br>				
+
+						<label for="email">Adresse E-mail : </label>
+						<input type="email" id="email" name="email" placeholder="aa@mail.com" required></input>
+
+						
+
+						<label for="phone">Numéro de Téléphone : </label>
+						<input type="tel" id="phone" name="phone" placeholder="06 07 08 09 10" required></input>
+
+
+						<input type="reset" value="Recommencer" class="DivContour"  required/>
+
+						<input type="submit" value="Envoyer" class="DivContour" required/>
+					</div>
+
+					
+
+
+				</fieldset>
+			</form>
+
+			<div class="center">
+				<div class="DivContour">
+					Déjà un compte ?<br><br>
+					<a href="./login2.html" class="DivContour seConnect">Se connecter</a>
+				</div>
+			</div>
+			
+			
+
+		</div>
+
+
+		
+	</div>
+
+</body>
+</html>
