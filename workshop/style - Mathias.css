@@ -1,0 +1,699 @@
+@font-face{
+	font-family: "Savate";
+  src: url("./Mathias/typos/Savate-master/otf/savate-regular.otf");
+}
+
+@font-face{
+	font-family: "Poppins";
+  src: url("./Mathias/typos/Poppins/Poppins-Regular.ttf");
+}
+
+/* cubic-bezier(.45,.05,.1,1.2) */
+
+*{
+	font-family: "Poppins";
+	margin: 0;
+	padding: 0;
+
+	color: #000;
+
+
+
+}
+
+
+.switch_Button {
+	position: relative;
+	z-index: 101;
+}
+
+
+a:link{
+	text-decoration: none;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+  transition: all 0.25s linear;
+}
+
+a:hover {
+  border-radius: 0%;
+}
+
+
+
+
+.all {
+	min-height: 100vh;
+	font-size: 22px;
+}
+
+/* =================== Animations =================== */
+
+
+@keyframes OnSpawn {
+  0% {
+  	transform: rotateZ(-45deg);
+  	left: -35%;
+  }
+}
+
+@keyframes OnCiao {
+  100% {
+  	transform: rotateZ(-45deg);
+  	left: -35%;
+  	display: none;
+  }
+}
+
+@keyframes SpawnInscription {
+	0% {
+		transform: translateY(-30vw);
+	}
+	100% {
+		/*top: 6.1vw;*/
+		transform: translateY(6.1vw);
+	}
+}
+
+@keyframes killInscription {
+	0% {
+		/*top: 6.1vw;*/
+		transform: translateY(6.1vw);
+	}
+	100% {
+		transform: translateY(-30vw);
+	}
+}
+
+@keyframes RotateAnim {
+	0% {
+		background-image: url('./Mathias/logo/Bouton.png');
+	}
+	100% {
+		background-image: url('./Mathias/logo/BoutonImage2.png');
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes RotateAnim2 {
+	0% {
+		background-image: url('./Mathias/logo/BoutonImage2.png');
+		transform: rotateX(0deg);
+	}
+	100% {
+		background-image: url('./Mathias/logo/Bouton.png');
+	}
+}
+
+/* ================================================== */
+
+.Etiquette_Sites{
+	display: flex;
+	flex-direction: column;
+
+
+	align-items: flex-start;
+	justify-content: center;
+	transform: rotateX(15deg) rotateY(15deg) translateX(-30%);
+}
+
+.Etiquette_buttons_Netflix{
+	transition: all 0.1s linear;
+	width: 4.3vw;
+	height: 4.3vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("./Mathias/icons/bouton Netflix.png");
+}
+
+.Etiquette_buttons_Amazon{
+	transition: all 0.1s linear;
+	width: 4.3vw;
+	height: 4.3vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("./Mathias/icons/bouton Amazon.png");
+}
+
+.Etiquette_buttons_Disney{
+	transition: all 0.1s linear;
+	width: 4.3vw;
+	height: 4.3vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("./Mathias/icons/bouton disney.png");
+}
+
+
+.Etiquette_Sites div:hover {
+	transform: translateX(-20%);
+}
+
+
+/* ################## Téléphone ################## */
+
+
+.Tel_Content {
+	position: relative;
+
+
+	font-size: 1.2vw;
+	overflow-y: hidden;
+
+	top: 0%;
+	left: 8%;
+
+	height: 80vw;
+	max-height: 22.5vw;
+	width: 77%;
+
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: perspective(5000px) rotateX(44deg) rotateY(6deg) rotateZ(-19.5deg);
+	perspective-origin: center;
+
+
+}
+
+.Tel_Contenu_1 {
+	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	border: solid 3px black;
+
+
+	background-image: url('./Mathias/ContentTel1.png');
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-color: black;
+	overflow-y: hidden;
+	width: 100%;
+	height: 100%;
+
+}
+
+.Tel_Contenu_2 {
+	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+	border: solid 3px black;
+
+	background-image: url('./Mathias/icons/TelephoneBack1.png');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	margin-top: 2%;
+	width: 100%;
+	height: 98.5%;
+
+}
+
+.Tel_Paragraphe{
+	margin: 0% 0%;
+}
+
+.Tel_Home_Button{
+	display: none;
+}
+
+
+#Animation{
+	top: 20%;
+}
+
+#Animation2{
+	top: 3vw;
+}
+#Animation3{
+	top: 10%;
+}
+
+
+
+
+.Tel_Absolute {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	height: 30vw;
+	width: 20vw;
+	left: 15vw;
+
+}
+
+
+.Tel_Absolute::before {
+	content: "";
+  position: absolute;
+  width: 20vw;
+  height: 30vw;
+  z-index: -1;
+
+
+  background-image: url('./Mathias/téléphoneFin.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotateZ(-10deg) scale(1.3);
+
+
+}
+
+
+
+
+
+.Security_Absolute{
+	display: block;
+	position: absolute;
+	z-index: 1;
+
+	width: 25vw;
+
+	left: 20vw;
+	transform: rotateZ(-10deg);
+	border-radius: 3vw;
+}
+
+.Secure_Icon{
+	background-image: url('./Images/Cadena.gif');
+	background-position: center;
+	background-size: cover;
+	width: 15vw;
+	height: 30vw;
+	background-blend-mode:screen;
+
+}
+
+
+.Image_Description_2{
+	background-image: url('./Mathias/cartoons/cartoon_echange.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 25vw;
+	height: 18vw;
+
+	border: double 5px black;
+	background-color: #e0e0e0;
+
+	justify-self: flex-end;
+}
+
+
+/* ############################ 1 ère partie ############################ */
+
+
+.Back_Dark {
+	background-color: #e7d8b6; /* Beige  */
+	background-color: #d2dbe2;
+	background-color: #E0E0E0;
+}
+
+.Back_Dark_1{
+	background-color: #afa181; /* Beige Foncé */
+	background-color: #b8c6d5;
+	background-color: #d2dbe2;
+}
+.Back_Dark_2 {
+	background-color: #ffefca; /* Beige Clair */
+	background-color: #98a6c0;
+	background-color: #b8c6d5;
+}
+
+.Bleu_Clair{
+	background-color: #d2dbe2;
+}
+
+.Bleu_Tres_Clair{
+	background-color: #E0E0E0;
+}
+
+.Bleu_Fonce{
+	background-color: #b8c6d5;
+}
+
+
+.Bandeau_Gris {
+	border: solid 1px	black;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+}
+
+.Bandeau_Top {
+	z-index: 100;
+	display: flex;
+	position: fixed;
+	background-color: #e7d8b6;
+	justify-content: space-around;
+	align-items: center;
+	width: 99.8%;
+	border: solid #000 2px;
+	left: 0;
+	top: 0;
+}
+
+/* ----------------- INSCRIPTION ----------------- */
+
+.LogoSwitch{
+	padding: 3%;
+
+	background-image: url('./Mathias/logo/Bouton.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+
+.Logo {
+
+	padding: 3%;
+
+	background-image: url('./Mathias/logo/STREAM SWITCH.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	width: 50%;
+}
+
+.Inscription_Button{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 1%;
+
+	width: 50%;
+}
+
+.Inscription_Button_Icon{
+
+	width: 2.5vw;
+	height: 2.5vw;
+	background-image: url('./Mathias/icons/Compte.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+
+
+
+.Inscription_Menu {
+
+	top: 0;
+	text-align: center;
+	border: solid #000 2px;
+
+	right: 3vw;
+	background-color: #e7d8b6;
+	z-index: 99;
+	width: auto;
+	height: auto;
+	position: fixed;
+}
+.Grid_Inscription {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 0.1vw;
+	border: none;
+	padding-bottom: 2vw;
+}
+
+.Grid_Inscription :not(:first-child){
+	margin: 0.2vw 1vw;
+	font-size: 1.1vw;
+}
+
+
+
+legend {
+	font-weight: bold;
+  padding: 0.2em 0.5em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+legend:before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  left: 0px;
+  top: 7px;
+}
+
+input {
+	border: solid #000 2px;
+	text-align: center;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]{
+	background-color: #e7d8b6;
+
+}
+#OK :hover{
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.Bandeau_1 {
+
+	display: flex;
+	flex-direction: column;
+	margin: 10% 7vw 10% 35%;
+	align-items: center;
+}
+
+.Bandeau_2 {
+
+	display: flex;
+	flex-direction: row;
+	margin: 7vw;
+	align-items: center;
+}
+
+.Bandeau_3 {
+
+	display: flex;
+	flex-direction: column;
+	margin: 7% 35% 7% 7vw;
+	align-items: center;
+}
+
+
+.Bandeau_BTN_Desc {
+	display: inline-flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	align-self: center;
+
+	width: 80%;
+
+	border: solid 2px black;
+
+}
+
+.Desc_Button {
+	align-self: center;
+	padding: 1vw;
+	margin-left: 0vw;
+
+	color: black;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	width: 5vw;
+	display: inline-block;
+
+}
+
+.Bandeau_Description {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	width: fit-content;
+
+	max-width: 80%;
+
+	align-self: center;
+
+
+}
+
+.Bandeau_BTN_Desc > * {
+	margin: 3%;
+}
+
+.Bandeau_Description p {
+	font-size: 22px;
+}
+
+
+h2{
+	margin: 5% 0;
+
+	font-family: "Savate";
+}
+
+h3{
+	margin: 10% 0;
+
+	font-family: "Savate";
+}
+
+h4{
+	font-size: 1.4vw;
+}
+/* ############################ Footer ############################ */
+
+
+.Footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+.Footer_Row {
+	display: flex;
+	justify-content:  space-around;
+
+}
+
+.Post_Insta{
+	display: none;
+}
+
+.Post_Pas_Insta{
+	display: block;
+	width: 100%;
+}
+
+.Footer_Column{
+	border: solid 2px black;
+
+	margin: 1%;
+	background-color: #98a6c0;
+	padding: 5%;
+
+}
+
+#Footer_Image_1{
+	background-image: url('./Images/frandroid.png');
+	background-color: white;
+}
+
+#Footer_Image_2{
+	background-image: url('./Images/Le dauphiné.png');
+	background-color: white;
+}
+#Footer_Image_3{
+	background-image: url('./Images/Netflix.jpg');
+	background-color: black;
+}
+
+
+#Text_Footer_1{
+	display: block;
+}
+#Text_Footer_2{
+	display: none;
+}
+
+
+.Footer_Image {
+
+	border: solid 2px black;
+	
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	padding: 30%;
+}
+
+.Footer_Boutons {
+	margin: 1vw 0;
+	display: flex;
+	justify-content: center;
+}
+
+.QRCODEPAPA{
+	display: flex; justify-content: center;
+}
+
+.QrCode{
+	background-image: url('./Images/QRCode.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	width: 4vw;
+	height: 4vw;
+}
+
+/* ############################ RESPONSIVE MEDIAS ############################ */
+
+
+@media screen and (max-width: 900px){
+	* {
+		text-align: center;
+
+	}
+	.Tel_Absolute {
+		display: none;
+	}
+
+	.Bandeau_1 {
+		margin: 15vw;
+	}
+
+	.Etiquette_Sites {
+		display: none;
+	}
+
+	.Bandeau_3{
+		margin: 10%;
+	}
+
+	.Security_Absolute {
+		display: none;
+	}
+
+	.Desc_Button {
+		width: 10vw;
+		height: 2vw;
+
+	}
+
+	.Image_Description_2{
+		display: none;
+	}
+
+	.Bandeau_2 {
+		margin: 20vw;
+	}
+}

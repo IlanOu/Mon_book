@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face{
+	font-family: "MontserratReg";
+  src: url("./Pablo/Fonts/Montserrat-Regular.ttf");
+}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+
+
+	font-family: "MontserratReg";
+	transition: all 0.25 linear;
+
+	text-align: center;
+
+}
+
+
+.switch_Button {
+	color: white;
+
+	position: relative;
+	z-index: 101;
+}
+
+body {
+	background-color: #020052;
+}
+
+
+.all {
+	min-height: 100vh;
+	font-size: 22px;
+}
+
+
+
+
+
+
+/* =================== Animations =================== */
+
+
+@keyframes OnSpawn {
+  0% {
+  	transform: rotateZ(-45deg);
+  	left: -35%;
+  }
+}
+
+@keyframes OnCiao {
+  100% {
+  	transform: rotateZ(-45deg);
+  	left: -35%;
+  	display: none;
+  }
+}
+
+@keyframes SpawnInscription {
+	0% {
+		transform-origin: top;
+		transform: rotateX(90deg) translateY(-10vw);
+	}
+	100% {
+		transform-origin: top;
+		/*top: 6.1vw;*/
+		transform: rotateX(0deg) translateY(0);
+	}
+}
+
+@keyframes killInscription {
+	0% {
+		transform-origin: top;
+		transform: rotateX(0deg) translateY(0);
+	}
+	100% {
+		transform-origin: top;
+		transform: rotateX(90deg) translateY(-10vw);
+	}
+}
+
+@keyframes RotateAnim {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes RotateAnim2 {
+	0% {
+		transform: rotateZ(360deg);
+	}
+	100% {
+		transform: rotateZ(0deg);
+	}
+}
+
+/* ================================================== */
+
+
+
+
+
+
+.Etiquette_Sites{
+	display: flex;
+	flex-direction: column;
+
+
+	align-items: flex-start;
+	justify-content: center;
+	transform: rotateX(15deg) rotateY(15deg);
+}
+
+.Etiquette_buttons_Netflix{
+	width: 4.3vw;
+	height: 4.3vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("./Pablo/icons/Netflix.png");
+	transition: all 0.1s linear;
+}
+
+.Etiquette_buttons_Amazon{
+	width: 4.3vw;
+	height: 4.3vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("./Pablo/icons/prime.png");
+	transition: all 0.1s linear;
+}
+
+.Etiquette_buttons_Disney{
+	width: 4.3vw;
+	height: 4.3vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("./Pablo/icons/Disney +.png");
+	transition: all 0.1s linear;
+}
+
+
+.Etiquette_Sites div:hover {
+	transform: translateX(-20%);
+}
+
+
+
+
+
+
+
+
+
+/* ################## Téléphone ################## */
+
+
+.Tel_Content {
+	font-size: 1.2vw;
+	overflow-y: hidden;
+	margin: 0 5%;
+	margin-top: 0.75vw;
+	height: 100vw;
+
+	max-height: 28.5vw;
+
+	border-radius: 1.9vw;
+
+
+	background-color: white;
+
+}
+
+.Tel_Contenu_1 {
+	background-image: url('./Pablo/Content/mockup.png');
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+
+	width: 100%;
+	height: 100%;
+}
+
+.Tel_Contenu_2 {
+	background-image: url('./Images/Test2.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	width: 100%;
+	height: 100%;
+}
+
+.Tel_Paragraphe{
+	position: sticky;
+	margin: 150% 0;
+}
+
+.Tel_Home_Button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Tel_Home_Icon {
+	border:  #222 solid;
+	border-radius: 2vw;
+	margin-top: 0.5vw;
+	width:2vw;
+	height: 2vw;
+}
+
+#Animation{
+	top: 25%;
+}
+
+#Animation2{
+	top: 10%;
+}
+#Animation3{
+	top: 10%;
+}
+
+.Tel_Absolute {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	height: 30vw;
+
+
+	width: 15vw;
+	background-image: url(./Pablo/téléphone.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-size: contain;
+
+	left: 20vw;
+	transform: rotateZ(-10deg);
+	border-radius: 3vw;
+}
+
+.Security_Absolute{
+	display: block;
+	position: absolute;
+	z-index: 1;
+
+	width: 25vw;
+
+	left: 20vw;
+	transform: rotateZ(-10deg);
+	border-radius: 3vw;
+}
+
+.Secure_Icon{
+	background-image: url('./Images/lock.gif');
+	background-position: center;
+	background-size: cover;
+	width: 10vw;
+	height: 18vw;
+	background-blend-mode:screen;
+
+}
+
+#Secure_Icon_Logo{
+	margin-top: 10%;
+}
+
+/*backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);*/
+
+
+.Image_Description_2{
+	background-image: url('./Pablo/cartoons/Echange.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 15vw;
+	height: 18vw;
+
+	justify-self: flex-end;
+}
+
+
+
+
+
+
+/* ############################ 1 ère partie ############################ */
+
+.Back_Dark {
+	/*background-color: #020052;*/
+	background-image: url('./Images/BackgroundPablo.png');
+}
+.Back_Dark_1{
+	background-color: #ddd
+}
+.Back_Dark_2 {
+	background-color: #fff;
+}
+
+.Background_Image{
+	background-image: url('./Images/BackgroundPablo.png');
+}
+
+.Bandeau_Gris {
+	position: relative;
+
+	padding: 1%;
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+}
+
+.Bandeau_Top {
+	
+	background-color: #1a1860;
+
+	z-index: 100;
+	display: flex;
+	position: fixed;
+	
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 30px;
+	width: 99.8%;
+	left: 0;
+	top: 0;
+	margin: 1vw 0;
+}
+
+
+.LogoSwitch{
+	padding: 3%;
+
+	background-image: url('./Pablo/logo/Logo icon.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+
+.Logo {
+
+	padding: 3%;
+
+	background-image: url('./Pablo/logo/Logo.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	width: 50%;
+}
+
+/* ----------------- INSCRIPTION ----------------- */
+
+
+.Inscription_Button{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 1%;
+
+	width: 50%;
+}
+
+.Inscription_Button_Icon{
+	border: solid 2px white;
+	border-radius: 100vw;
+	width: 2vw;
+	height: 2vw;
+	background-image: url(https://www.sodevam.com/wp-content/uploads/2022/05/particulier-blanc.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.Inscription_Menu {
+	top: 7vw;
+	text-align: center;
+
+	border-radius: 2vw;
+
+	right: 3vw;
+
+	border: solid #1a1860 1px;
+
+	backdrop-filter: blur(16px) saturate(110%);
+	-webkit-backdrop-filter: blur(16px) saturate(110%);
+
+	background-color: rgba(2, 0, 82, 0.25);
+
+	z-index: 99;
+
+	width: auto;
+	height: auto;
+
+	position: fixed;
+}
+.Grid_Inscription {
+	padding-bottom: 2vw;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 0.1vw;
+}
+
+.Grid_Inscription :not(:first-child){
+	margin: 1vw 5vw;
+	font-size: 1.1vw;
+}
+
+fieldset {
+	color: white;
+	width: 25vw;
+  border:none;
+}
+legend {
+	font-weight: bold;
+  padding: 0.2em 0.5em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+legend:before {
+  position: absolute;
+  content: '';
+  height: 8px;
+  left: 0px;
+  top: 7px;
+}
+
+input {
+	color: black;
+	border: none;
+	border-radius: 2vw;
+	text-align: center;
+
+}
+
+input[type="submit"]{
+	text-decoration: underline;
+	background-color: #f2ccff;
+
+}
+.Bandeau_1 {
+
+	display: flex;
+	flex-direction: column;
+	margin: 10% 10vw 10% 35%;
+	align-items: center;
+}
+
+.Bandeau_2 {
+
+	display: flex;
+	flex-direction: row;
+	margin: 7vw;
+	align-items: center;
+}
+
+.Bandeau_3 {
+
+	display: flex;
+	flex-direction: column;
+	margin: 10% 35% 10% 10vw;
+	align-items: center;
+}
+
+
+.Bandeau_BTN_Desc {
+	background-color: #efefef;
+	border-radius: 30px;
+
+	display: inline-flex;
+	flex-direction: column;
+
+	justify-content: center;
+	justify-items: center;
+	align-self: center;
+
+	width: 80%;
+	padding: 3%;
+
+}
+
+#rose{
+	background-color: #f2ccff ;
+}
+
+.Desc_Button {
+	align-self: center;
+	padding: 1vw;
+
+	color: black;
+
+	border-radius: 0.5vw;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	width: 5vw;
+	display: inline-block;
+}
+
+
+.Bandeau_Description {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	width: fit-content;
+
+	max-width: 80%;
+
+	align-self: center;
+
+
+}
+
+.Bandeau_BTN_Desc > * {
+	margin: 3%;
+}
+
+.Bandeau_Description p {
+	font-size: 22px;
+}
+
+
+h2{
+	margin: 5% 0;
+	font-family: 'Montserrat';
+
+}
+
+h3{
+	margin: 10% 0;
+}
+
+h4{
+	font-size: 1.4vw;
+}
+
+/* ############################ Footer ############################ */
+
+
+.Footer {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+.Footer_Row {
+	display: flex;
+	justify-content:  space-around;
+
+}
+
+
+.Post_Insta{
+	display: block;
+
+	width: 100%;
+
+
+}
+
+.Post_Pas_Insta{
+	display: none;
+}
+
+
+.Footer_Column{
+	border-radius: 2vw;
+
+	margin: 1%;
+	background-color: #1a1860;
+	padding: 5%;
+
+	width: 15vw;
+	height: 15vw;
+
+	
+
+}
+
+#Footer_Image_1{
+	background-image: url('./Pablo/Content/InstaPost1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#Footer_Image_2{
+	background-image: url('./Pablo/Content/InstaPost2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#Footer_Image_3{
+	background-image: url('./Pablo/Content/InstaPost3.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#Text_Footer_1{
+	display: none;
+}
+#Text_Footer_2{
+	display: block;
+}
+
+
+.Footer_Image {
+	border-radius: 2vw;
+
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	padding: 30%;
+}
+
+.Footer_Boutons {
+	display: flex;
+	justify-content: center;
+	color: black;
+}
+
+/* ############################ RESPONSIVE MEDIAS ############################ */
+
+
+@media screen and (max-width: 900px){
+	* {
+		text-align: center;
+	}
+	.Tel_Absolute {
+		display: none;
+	}
+
+	.Bandeau_1 {
+		margin: 10%;
+	}
+
+	.Etiquette_Sites {
+		display: none;
+	}
+
+	.Bandeau_3{
+		margin: 10%;
+	}
+
+	.Security_Absolute {
+		display: none;
+	}
+
+	.Bandeau_2 {
+		margin: 15vw;
+	}
+
+	.Desc_Button {
+		width: 10vw;
+		height: 2vw;
+
+	}
+
+	.Image_Description_2{
+		display: none;
+	}
+}
