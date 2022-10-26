@@ -645,16 +645,6 @@ h4{
 	display: flex; justify-content: center;
 }
 
-.QrCode{
-	background-image: url('./Images/QRCode.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-
-	width: 4vw;
-	height: 4vw;
-}
-
 /* ############################ RESPONSIVE MEDIAS ############################ */
 
 
