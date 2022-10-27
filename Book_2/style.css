@@ -27,6 +27,10 @@
 }
 
 
+.NoPossible{
+  display: none;
+}
+
 body {
   background-color: black;
   text-align: center;
@@ -426,6 +430,7 @@ a:active {
   height: 226px;
   opacity: 0.5;
   transition: all 0.1s linear;
+
 }
 
 
@@ -438,8 +443,9 @@ a:active {
 
 #Design3DPart .Butt div {
   font-size: 40px;
+  font-weight: bold;
   margin-top: 240%;
-  color: #8b8b8d;
+  color: #fa194e;
 
 }
 
@@ -912,4 +918,20 @@ a:active {
   font-size: 2vw;
   width: 2vw;
   height: 2vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    display: none;
+  }
+  .NoPossible {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    
+  }
+  .NoPossible h1{
+
+    z-index: 5;
+  }
 }
